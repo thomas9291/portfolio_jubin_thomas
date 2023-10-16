@@ -17,6 +17,14 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "lib/mongodb.js",
+    "lib/mongoose.js",
+    "db/connect.js",
+    "lib/awsconfig.js"
+  ],
   "exclude": ["node_modules"]
 }
