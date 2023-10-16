@@ -1,16 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import AWS from "aws-sdk";
+import s3 from "../../../../lib/s3Auth";
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const s3 = new AWS.S3({
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-    region: process.env.AWS_REGION,
-  });
-
   const bucketName = "portfolio-thomas-jubin";
   const objectKey = "foto-graduation3.jpg";
 

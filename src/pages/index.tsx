@@ -1,5 +1,3 @@
-import ImageProfile from "../components/image/index";
-
 export default function homePage() {
-  return <ImageProfile />;
+  return <div>home page</div>;
 }
