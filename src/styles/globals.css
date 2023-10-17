@@ -3,6 +3,23 @@
 @tailwind utilities;
 
 body {
-  background-color: rgb(29, 28, 28);
-  height: 100vh;
+  background: linear-gradient(rgb(29, 28, 28), grey);
+
+  --color-link: rgb(114, 232, 70);
+  --color-link-hover: rgb(85, 80, 220);
+}
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+@media (max-width: 629px) {
+  .presentation {
+    flex-direction: column;
+  }
+}
+.iconContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem;
 }
