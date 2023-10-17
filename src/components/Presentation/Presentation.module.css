@@ -1,0 +1,24 @@
+.img {
+  width: auto;
+  height: auto;
+  margin: 1rem;
+}
+.headers {
+  font-size: xx-large;
+  font-weight: 700;
+}
+.headers2 {
+  font-size: x-large;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .headers2 {
+    font-size: larger;
+    font-weight: 400;
+  }
+  .headers {
+    font-size: x-large;
+    font-weight: 500;
+  }
+}

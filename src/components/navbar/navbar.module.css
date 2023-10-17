@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 10%;
+  background-color: rgb(29, 28, 28);
 }
 
 .header ul {
@@ -19,16 +20,20 @@
   margin: 1rem;
   font-size: 1rem;
 }
+.navbar ul li:hover {
+  transform: scale(1.3);
+}
 
 .header a {
-  color: rgb(114, 232, 70);
+  color: var(--color-link);
   font-size: 1rem;
 }
 
 .header a:hover,
 .header a:active,
 .header a.active {
-  color: rgb(23, 213, 86);
+  color: var(--color-link-hover);
+  transform: scale(1.3);
 }
 
 @media (min-width: 768px) {
