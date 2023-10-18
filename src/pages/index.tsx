@@ -9,9 +9,11 @@ export default function homePage() {
         <Icons />
       </div>
       <PresentationText />
-      <div className="flex flex-row justify-center bg-neutral-800 ">
+
+      <div className="flex flex-row justify-center bg-[url('/images/matrix/matrix.avif')] ">
         <Computer />
       </div>
     </>
   );
 }
+//bg-neutral-800
