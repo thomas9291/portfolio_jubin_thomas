@@ -18,6 +18,7 @@ const PresentationText: React.FC = () => {
           width={350}
           height={350}
           style={imageStyle}
+          priority
         />
       </div>
       <div className="flex flex-col justify-center items-center m-2 text-white">

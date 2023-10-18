@@ -1,5 +1,4 @@
 import classes from "./Cumputer.module.css";
-import Image from "next/image";
 
 import React from "react";
 

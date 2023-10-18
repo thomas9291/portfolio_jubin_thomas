@@ -1,5 +1,7 @@
 import React from "react";
 
+import ScreenComputer from "../../components/screenComputer";
+
 export default function contact() {
-  return <div>contact</div>;
+  return <ScreenComputer />;
 }
