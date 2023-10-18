@@ -1,19 +1,27 @@
 .cadre {
-  width: 250px;
-  height: 150px;
+  width: 350px;
+  height: 220px;
   background-color: rgba(73, 70, 70, 0.86);
   margin: 1rem;
+  margin-bottom: 2rem;
   border: 4px solid black;
   border-bottom: none;
   border-radius: 0.4rem;
   position: relative;
+  overflow: hidden;
 }
 .clavier {
-  width: 250px;
+  width: 350px;
   height: 10px;
   background-color: grey;
   position: absolute;
   bottom: 0px;
   border-radius: 0.5rem;
   left: 0.5px;
+}
+.screen {
+  position: absolute;
+  bottom: 10px;
+  width: auto;
+  height: auto;
 }
