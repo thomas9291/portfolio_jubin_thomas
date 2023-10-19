@@ -1,6 +1,7 @@
 import PresentationText from "@/components/Presentation";
 import Computer from "@/components/cumputer/Computer";
 import Icons from "@/components/icons";
+import Link from "next/link";
 
 export default function homePage() {
   return (
@@ -11,7 +12,10 @@ export default function homePage() {
       <PresentationText />
 
       <div className="flex flex-row justify-center bg-[url('/images/matrix/matrix.avif')] ">
-        <Computer />
+        <Link href={"/projects"}>
+          {" "}
+          <Computer />
+        </Link>
       </div>
     </>
   );

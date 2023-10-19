@@ -7,6 +7,8 @@ const nextConfig = {
     domains: [
       "portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com",
       "skillicons.dev",
+      "images.unsplash.com",
+      "plus.unsplash.com",
     ],
   },
 };
