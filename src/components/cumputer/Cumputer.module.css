@@ -25,3 +25,7 @@
   width: auto;
   height: auto;
 }
+.cadre:hover {
+  transform: scale(1.2);
+  transition: all 1s ease-out;
+}

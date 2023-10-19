@@ -22,3 +22,7 @@
     font-weight: 500;
   }
 }
+.img:hover {
+  transform: scale(1.2);
+  transition: all 1s ease-out;
+}

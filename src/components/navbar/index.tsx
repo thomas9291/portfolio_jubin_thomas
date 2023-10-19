@@ -32,6 +32,9 @@ function NavBar() {
           <li>
             <Link href="/contact">Contact</Link>
           </li>
+          <li>
+            <Link href="/aboutMe">About Me</Link>
+          </li>
         </ul>
       </nav>
     </header>

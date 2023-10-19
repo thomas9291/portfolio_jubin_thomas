@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import classes from "./Presentation.module.css";
+import Link from "next/link";
 
 const PresentationText: React.FC = () => {
   const imageStyle = {
@@ -12,16 +13,18 @@ const PresentationText: React.FC = () => {
   return (
     <div className="presentation">
       <div className={classes.img}>
-        <Image
-          src="https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/foto-graduation3.jpg"
-          alt="is loading..."
-          width={350}
-          height={350}
-          style={imageStyle}
-          priority
-        />
+        <Link href={"/aboutMe"}>
+          <Image
+            src="https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/foto-graduation3.jpg"
+            alt="is loading..."
+            width={350}
+            height={350}
+            style={imageStyle}
+            priority
+          />
+        </Link>
       </div>
-      <div className="flex flex-col justify-center items-center m-2 text-white">
+      <div className="flex flex-col justify-center items-center m-2 text-[#f5f3f1]">
         <h1 className={classes.headers2}>Hi, MY NAME IS THOMAS JUBIN</h1>
         <h1 className={classes.headers}>I´M A FULL-STACK WEB DEVELOPER</h1>
       </div>

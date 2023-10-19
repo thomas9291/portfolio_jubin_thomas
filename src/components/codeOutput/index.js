@@ -4,9 +4,9 @@ import Markdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { light } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
-import classes from "./screenComputer.module.css";
+import classes from "./codeOutput.module.css";
 
-const ScreenComputer = () => {
+const CodeOutput = () => {
   const markdown = `
   ~~~js
   import React from 'react';
@@ -58,4 +58,4 @@ export default TodoList;
   );
 };
 
-export default ScreenComputer;
+export default CodeOutput;
