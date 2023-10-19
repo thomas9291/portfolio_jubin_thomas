@@ -24,7 +24,7 @@ const PresentationText: React.FC = () => {
           />
         </Link>
       </div>
-      <div className="flex flex-col justify-center items-center m-2 text-[#f5f3f1]">
+      <div className={classes.containerText}>
         <h1 className={classes.headers2}>Hi, MY NAME IS THOMAS JUBIN</h1>
         <h1 className={classes.headers}>I´M A FULL-STACK WEB DEVELOPER</h1>
       </div>

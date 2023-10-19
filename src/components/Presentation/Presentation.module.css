@@ -12,6 +12,14 @@
   font-weight: 500;
 }
 
+.containerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  color: #f5f3f1;
+}
 @media (max-width: 768px) {
   .headers2 {
     font-size: larger;
@@ -23,6 +31,6 @@
   }
 }
 .img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: all 1s ease-out;
 }

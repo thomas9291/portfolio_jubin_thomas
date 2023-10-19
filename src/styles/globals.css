@@ -28,6 +28,7 @@ body {
 }
 @media (max-width: 629px) {
   .presentation {
+    display: flex;
     flex-direction: column;
   }
 }
