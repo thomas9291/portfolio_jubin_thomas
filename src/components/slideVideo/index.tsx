@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import CartVideo from "../cartVideo/index";
 import Link from "next/link";
+import { projectArray } from "../../../lib/projectArray";
 
 // Import Swiper styles
 import "swiper/css";
@@ -35,7 +36,23 @@ export default function SlideVideo() {
           modules={[EffectCoverflow, Pagination]}
           /* className="mySwiper" */
         >
-          <SwiperSlide className={classes.swiperSlide}>
+          {projectArray.map((element) => {
+            return (
+              <SwiperSlide
+                key={element.projectId}
+                className={classes.swiperSlide}
+              >
+                <div className={classes.img}>
+                  <CartVideo
+                    title={element.title}
+                    videoURL={element.videoURL}
+                    projectId={element.projectId}
+                  />
+                </div>
+              </SwiperSlide>
+            );
+          })}
+          {/*  <SwiperSlide className={classes.swiperSlide}>
             <div className={classes.img}>
               <CartVideo />
             </div>
@@ -44,12 +61,7 @@ export default function SlideVideo() {
             <div className={classes.img}>
               <CartVideo />
             </div>
-          </SwiperSlide>
-          <SwiperSlide className={classes.swiperSlide}>
-            <div className={classes.img}>
-              <CartVideo />
-            </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
         <div className={classes.info}>
           <p>To see more projects, I invite you to visit my github:</p>

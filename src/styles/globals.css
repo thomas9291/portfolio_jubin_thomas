@@ -16,8 +16,6 @@ body {
   --cocoa-brown-950: #271b1b;
   background: linear-gradient(var(--cocoa-brown-950), var(--cocoa-brown-200));
 
-  /* background: linear-gradient(rgb(29, 28, 28), grey); */
-
   --color-link: rgb(114, 232, 70);
   --color-link-hover: rgb(85, 80, 220);
 }
