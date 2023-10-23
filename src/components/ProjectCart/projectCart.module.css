@@ -101,3 +101,9 @@
   border: 6px solid black;
   border-radius: 1rem;
 }
+.iconsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem;
+}
