@@ -47,3 +47,10 @@
     font-size: 1.25rem;
   }
 }
+@media (max-width: 470px) {
+  .header {
+    display: flex;
+    height: 8rem;
+    flex-direction: column;
+  }
+}

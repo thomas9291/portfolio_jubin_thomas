@@ -7,3 +7,11 @@ export interface Project {
   linkURL: string;
   codeURL: string;
 }
+export interface ProjectObj {
+  date?: string | null;
+  title?: string | null;
+  description?: string | null;
+  videoURL?: string | null;
+  linkURL?: string | null;
+  codeURL?: string | null;
+}
