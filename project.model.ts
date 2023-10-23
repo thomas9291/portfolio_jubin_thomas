@@ -1,6 +1,7 @@
 export interface Project {
   projectId: string;
   date: string;
+  programs: string[];
   title: string;
   description: string;
   videoURL: string;
@@ -10,6 +11,7 @@ export interface Project {
 export interface ProjectObj {
   date?: string | null;
   title?: string | null;
+  programs?: React.JSX.Element[] | null;
   description?: string | null;
   videoURL?: string | null;
   linkURL?: string | null;

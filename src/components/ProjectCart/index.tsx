@@ -10,6 +10,7 @@ export const ProjectCart: React.FC<ProjectObj> = (props) => {
       <div className={classes.title}>
         <h1>{props.title}</h1>
       </div>
+      <div className={classes.iconsContainer}>{props.programs}</div>
       <div className={classes.linkURL}>
         <Link href={props.linkURL!} target="_blank">
           {props.linkURL!}
