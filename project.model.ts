@@ -17,3 +17,8 @@ export interface ProjectObj {
   linkURL?: string | null;
   codeURL?: string | null;
 }
+
+export interface certificats {
+  certificatId: string;
+  imagePath: string;
+}
