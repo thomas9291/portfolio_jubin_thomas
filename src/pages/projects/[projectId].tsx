@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import { projectArray } from "../../../lib/projectArray";
 import { ProjectCart } from "@/components/ProjectCart";
+import { ErrorComponent } from "@/components/errorComponent";
 
 import {
   Aws,
@@ -24,7 +25,6 @@ const ProjectDetail = () => {
   const router = useRouter();
   const { projectId } = router.query;
   const projectObj = projectArray.find((obj) => obj.projectId === projectId);
-  console.log(projectObj);
 
   function getIcons() {
     let arr: React.JSX.Element[] = [];
@@ -73,7 +73,10 @@ const ProjectDetail = () => {
     return arr;
   }
   const iconsArray = getIcons();
-  console.log("get icons frm detailPage: ", iconsArray);
+
+  if (!projectObj) {
+    return <ErrorComponent />;
+  }
 
   return (
     <div>

@@ -33,4 +33,5 @@ body {
   display: flex;
   justify-content: flex-end;
   margin: 1rem;
+  padding: 1rem;
 }

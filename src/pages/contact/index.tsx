@@ -1,5 +1,6 @@
 import React from "react";
+import { ErrorComponent } from "@/components/errorComponent";
 
 export default function contact() {
-  return <div>contact</div>;
+  return <div>contact page</div>;
 }

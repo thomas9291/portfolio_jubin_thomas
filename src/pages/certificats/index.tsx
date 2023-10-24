@@ -1,6 +1,9 @@
-import React from "react";
-import CartVideo from "@/components/cartVideo";
+import { Certificats } from "../../components/certificats";
 
 export default function certificats() {
-  return <div>certificats</div>;
+  return (
+    <div>
+      <Certificats />
+    </div>
+  );
 }
