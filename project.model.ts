@@ -22,3 +22,12 @@ export interface certificats {
   certificatId: string;
   imagePath: string;
 }
+
+export interface certificatDetail {
+  certificatId?: string | null;
+  imagePath?: string | null;
+  title?: string | null;
+  date?: string | null;
+  description?: string | null;
+  linkURL?: string | null;
+}

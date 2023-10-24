@@ -1,12 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import { certificats } from "../../../project.model";
 
-interface Props {
+/* interface Props {
   imagePath: string;
   id: string;
-}
+} */
 
-export const CertificatsComponentCart = (props: Props) => {
+export const CertificatsComponentCart: React.FC<certificats> = (
+  props: certificats
+) => {
   const imageStyle: any = {
     border: "3px solid black",
     borderRadius: "1rem",
@@ -14,7 +17,7 @@ export const CertificatsComponentCart = (props: Props) => {
   };
   return (
     <Image
-      id={props.id}
+      id={props.certificatId}
       style={imageStyle}
       src={props.imagePath}
       height={450}
