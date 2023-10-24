@@ -1,11 +1,10 @@
 import React from "react";
 import { CertificatsComponentCart } from "@/components/certificatsCompnentCart";
 import { certificatsArray } from "../../../lib/certificatArray";
-export { certificatsArray } from "../../../lib/certificatArray";
 import classes from "./certificats.module.css";
 import Link from "next/link";
 
-export const Certificats = () => {
+export const Certificats: React.FC = () => {
   return (
     <div className={classes.container}>
       {certificatsArray.map((obj) => {
@@ -13,8 +12,8 @@ export const Certificats = () => {
           <div key={obj.certificatId} className="m-2">
             <Link href={`/certificats/${obj.certificatId}`}>
               <CertificatsComponentCart
-                imagePath={obj.imagePath}
-                id={obj.certificatId}
+                imagePath={obj.imagePath!}
+                certificatId={obj.certificatId!}
               />
             </Link>
           </div>

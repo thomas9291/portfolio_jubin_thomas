@@ -58,7 +58,7 @@
   }
 }
 .title {
-  color: rgb(114, 232, 70);
+  color: var(--cocoa-brown-50);
   font-size: xx-large;
   text-align: center;
 }

@@ -1,0 +1,87 @@
+.img {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header1 {
+  font-size: x-large;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--cocoa-brown-50);
+  animation: ease-in 1s slidein;
+}
+.header2 {
+  margin: 1rem;
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--cocoa-brown-100);
+  animation: ease-in 2s slideinReverse;
+}
+.descriptionText {
+  padding: 1rem;
+  animation: ease-in 3s visiblility;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0%;
+    opacity: 1;
+  }
+}
+@keyframes slideinReverse {
+  from {
+    margin-right: 100%;
+    opacity: 0;
+  }
+
+  to {
+    margin-right: 0%;
+    opacity: 1;
+  }
+}
+@keyframes visiblility {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    transform: scale(1);
+
+    opacity: 1;
+  }
+}
+@media (min-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+  }
+  .img {
+    width: 100%;
+  }
+  .img:hover {
+    transform: scale(1.2);
+    transition: all 1s ease-out;
+  }
+  .text {
+    width: 100%;
+  }
+}
