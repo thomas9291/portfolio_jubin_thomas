@@ -12,6 +12,8 @@ import {
 export const Telephon = () => {
   const imageStyle: any = {
     borderRadius: "50%",
+    width: "auto",
+    height: "auto",
   };
   return (
     <>
@@ -20,8 +22,8 @@ export const Telephon = () => {
           <Image
             style={imageStyle}
             src={"/images/whatsapp-perfil/whatsapp_profil.jpg"}
-            width={50}
-            height={50}
+            width={48}
+            height={48}
             alt="foto from thomas"
             priority
           />
