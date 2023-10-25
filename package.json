@@ -8,7 +8,6 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "author": "thomas jubin",
   "license": "Apache-2.0",
   "dependencies": {
     "@headlessui/react": "^1.7.17",
@@ -19,6 +18,7 @@
     "react-dom": "^18",
     "react-markdown": "^9.0.0",
     "react-syntax-highlighter": "^15.5.0",
+    "sharp": "^0.32.6",
     "swiper": "^10.3.1"
   },
   "devDependencies": {
