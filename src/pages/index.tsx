@@ -10,7 +10,9 @@ export default function homePage() {
       <div className="iconContainer">
         <Icons />
       </div>
-      <PresentationText />
+      <div>
+        <PresentationText />
+      </div>
 
       <div className="matrix">
         <div>
@@ -27,4 +29,3 @@ export default function homePage() {
     </>
   );
 }
-//bg-neutral-800

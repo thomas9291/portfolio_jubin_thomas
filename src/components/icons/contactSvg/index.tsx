@@ -61,8 +61,8 @@ export const PhoneEnd = () => {
       </g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         stroke="#CCCCCC"
         strokeWidth="1.6"
       ></g>
@@ -74,7 +74,7 @@ export const PhoneEnd = () => {
           id="Page-1"
           strokeWidth="0.22400000000000003"
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         >
           {" "}
           <g
@@ -170,8 +170,8 @@ export const AudioPhone = () => {
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}

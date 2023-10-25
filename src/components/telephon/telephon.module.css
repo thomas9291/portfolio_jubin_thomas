@@ -10,8 +10,6 @@
   overflow: hidden;
 }
 .logo {
-  width: auto;
-  height: auto;
   position: absolute;
   top: 20px;
   left: 70px;
@@ -19,7 +17,7 @@
 .header {
   color: white;
   position: absolute;
-  top: 80px;
+  top: 85px;
 }
 .calling {
   font-size: x-small;
