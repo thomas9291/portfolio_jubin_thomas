@@ -16,13 +16,15 @@ export const CertificateCartDetail: React.FC<certificatDetail> = (props) => {
         <h1 className={classes.header1}>{props.title}</h1>
         <h2 className={classes.header2}>{props.date}</h2>
         <p className={classes.descriptionText}>{props.description}</p>
-        <Link
-          style={{ color: "rgb(114, 232, 70)" }}
-          href={props.linkURL!}
-          target="_blank"
-        >
-          more details
-        </Link>
+        <div>
+          <Link
+            style={{ color: "rgb(114, 232, 70)" }}
+            href={props.linkURL!}
+            target="_blank"
+          >
+            more details
+          </Link>
+        </div>
       </div>
       <div className={classes.img}>
         <Image
