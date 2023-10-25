@@ -1,6 +1,10 @@
 import React from "react";
-import { ErrorComponent } from "@/components/errorComponent";
+import { ContactCarts } from "@/components/contactCarts";
 
 export default function contact() {
-  return <div>contact page</div>;
+  return (
+    <div>
+      <ContactCarts />
+    </div>
+  );
 }

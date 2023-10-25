@@ -22,9 +22,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: stretch;
+  height: 500px;
+}
+.matrix {
+  display: flex;
+  flex-direction: row;
+  background-image: url("/images/matrix/matrix.avif");
+  justify-content: space-evenly;
+  align-items: center;
 }
 @media (max-width: 629px) {
   .presentation {
+    display: flex;
+    flex-direction: column;
+  }
+  .matrix {
     display: flex;
     flex-direction: column;
   }
