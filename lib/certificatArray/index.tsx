@@ -2,15 +2,16 @@ import { certificatDetail } from "../../project.model";
 
 export const certificatsArray: certificatDetail[] = [
   {
-    imagePath: "/images/certificats/AWS_introduction_certificat.jpeg",
+    imagePath: "/images/certificats/spiced_certificats.jpg",
     certificatId: "certificat1",
-    title: "AWS Introduction",
-    date: "Sept.18.2023",
+    date: "Jul.06.2023",
+    title: "Full Stack Spiced Bootcamp",
     linkURL:
-      "https://www.udemy.com/course/introduction-to-cloud-computing-on-amazon-aws-for-beginners/",
+      "https://www.spiced-academy.com/en/program/full-stack-web-development",
     description:
-      "Learn fundamental concepts of cloud computing and including storage, database, networking, virtualization, containers, and cloud architecture, Create an AWS Free Tier account and launch your first virtual servers (Amazon EC2 instances) on the AWS Cloud,  Configure elasticity, high availability and fault tolerance using Amazon EC2 Auto Scaling and Amazon Elastic Load Balancing, Create and configure storage services and upload files and objects using Amazon EBS, Amazon EFS and Amazon S3, Launch a relational database on Amazon RDS and a NoSQL database using Amazon DynamoDB, Automatically deploy infrastructure using code through AWS CloudFormation, Create a Platform as a Service (PaaS) application on AWS Elastic Beanstalk, Learn how to use DevOps tools on AWS to automate a continuous integration and continuous delivery (CI/CD) pipeline, Implement serverless computing and Docker containers on AWS using AWS Lambda and Amazon ECS, Create serverless event-driven architectures on Lambda, Create loosely coupled services with Amazon SQS and Amazon SNS",
+      "HTML & CSS (The building blocks of the web. Learn to build beautiful, responsive websites.), JavaScript(The essential coding language for the modern web developer.), React(Learn how to build single page applications with the most popular front-end framework.), Git & GitHub(Collaborate, discover, and build better software with the world's largest developer community.), NextJS(Write APIs and build client and server logic with NextJS.), Databases(Learn to build and query NoSQL databases with MongoDB.)",
   },
+
   {
     imagePath: "/images/certificats/AWS_practictioner_certificat.jpeg",
     certificatId: "certificat2",
@@ -69,13 +70,13 @@ export const certificatsArray: certificatDetail[] = [
       "HTML5,CSS3,Flexbox,Responsive Design,JavaScript (all 2022 modern syntax, ES6, ES2018, etc.),  Asynchronous JavaScript - Promises, async/await, etc., AJAX and single page apps,Bootstrap 4 and 5, ReactJS, SemanticUI, Bulma CSS Framework, DOM Manipulation, Unix(Command Line) Commands, NodeJS, NPM, ExpressJS, Templating, REST, SQL vs. NoSQL databases, MongoDB, Database Associations, Schema Design, Mongoose, Authentication From Scratch, Cookies & Sessions,Authorization,  Common Security Issues - SQL Injection, XSS, etc..,  Developer Best Practices, Deploying Apps, Cloud Databases,Image Upload and Storage,  Maps and Geocoding.",
   },
   {
-    imagePath: "/images/certificats/spiced_certificats.jpg",
+    imagePath: "/images/certificats/AWS_introduction_certificat.jpeg",
     certificatId: "certificat8",
-    date: "Jul.06.2023",
-    title: "Full Stack Spiced Bootcamp",
+    title: "AWS Introduction",
+    date: "Sept.18.2023",
     linkURL:
-      "https://www.spiced-academy.com/en/program/full-stack-web-development",
+      "https://www.udemy.com/course/introduction-to-cloud-computing-on-amazon-aws-for-beginners/",
     description:
-      "HTML & CSS (The building blocks of the web. Learn to build beautiful, responsive websites.), JavaScript(The essential coding language for the modern web developer.), React(Learn how to build single page applications with the most popular front-end framework.), Git & GitHub(Collaborate, discover, and build better software with the world's largest developer community.), NextJS(Write APIs and build client and server logic with NextJS.), Databases(Learn to build and query NoSQL databases with MongoDB.)",
+      "Learn fundamental concepts of cloud computing and including storage, database, networking, virtualization, containers, and cloud architecture, Create an AWS Free Tier account and launch your first virtual servers (Amazon EC2 instances) on the AWS Cloud,  Configure elasticity, high availability and fault tolerance using Amazon EC2 Auto Scaling and Amazon Elastic Load Balancing, Create and configure storage services and upload files and objects using Amazon EBS, Amazon EFS and Amazon S3, Launch a relational database on Amazon RDS and a NoSQL database using Amazon DynamoDB, Automatically deploy infrastructure using code through AWS CloudFormation, Create a Platform as a Service (PaaS) application on AWS Elastic Beanstalk, Learn how to use DevOps tools on AWS to automate a continuous integration and continuous delivery (CI/CD) pipeline, Implement serverless computing and Docker containers on AWS using AWS Lambda and Amazon ECS, Create serverless event-driven architectures on Lambda, Create loosely coupled services with Amazon SQS and Amazon SNS",
   },
 ];
