@@ -2,6 +2,7 @@ import PresentationText from "@/components/Presentation";
 import Computer from "@/components/cumputer/Computer";
 import Icons from "@/components/icons";
 import Link from "next/link";
+import { Telephon } from "@/components/telephon";
 
 export default function homePage() {
   return (
@@ -11,11 +12,17 @@ export default function homePage() {
       </div>
       <PresentationText />
 
-      <div className="flex flex-row justify-center bg-[url('/images/matrix/matrix.avif')] ">
-        <Link href={"/projects"}>
-          {" "}
-          <Computer />
-        </Link>
+      <div className="matrix">
+        <div>
+          <Link href={"/projects"}>
+            <Computer />
+          </Link>
+        </div>
+        <div>
+          <Link href={"/contact"}>
+            <Telephon />
+          </Link>
+        </div>
       </div>
     </>
   );

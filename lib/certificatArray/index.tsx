@@ -5,7 +5,7 @@ export const certificatsArray: certificatDetail[] = [
     imagePath: "/images/certificats/spiced_certificats.jpg",
     certificatId: "certificat1",
     date: "Jul.06.2023",
-    title: "Full Stack Spiced Bootcamp",
+    title: "Spiced Academy Bootcamp",
     linkURL:
       "https://www.spiced-academy.com/en/program/full-stack-web-development",
     description:
