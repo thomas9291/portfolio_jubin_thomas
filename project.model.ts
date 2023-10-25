@@ -19,7 +19,6 @@ export interface ProjectObj {
 }
 
 export interface certificats {
-  certificatId: string;
   imagePath: string;
 }
 

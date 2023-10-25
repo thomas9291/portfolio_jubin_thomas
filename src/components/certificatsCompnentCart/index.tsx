@@ -2,11 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { certificats } from "../../../project.model";
 
-/* interface Props {
-  imagePath: string;
-  id: string;
-} */
-
 export const CertificatsComponentCart: React.FC<certificats> = (
   props: certificats
 ) => {
@@ -16,13 +11,14 @@ export const CertificatsComponentCart: React.FC<certificats> = (
     margin: "1rem",
   };
   return (
-    <Image
-      id={props.certificatId}
-      style={imageStyle}
-      src={props.imagePath}
-      height={450}
-      width={450}
-      alt="certificats from author"
-    />
+    <>
+      <Image
+        style={imageStyle}
+        src={props.imagePath}
+        height={450}
+        width={450}
+        alt="certificats from author"
+      />
+    </>
   );
 };

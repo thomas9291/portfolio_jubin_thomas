@@ -10,11 +10,8 @@ export const Certificats: React.FC = () => {
       {certificatsArray.map((obj) => {
         return (
           <div key={obj.certificatId} className="m-2">
-            <Link href={`/certificats/${obj.certificatId}`}>
-              <CertificatsComponentCart
-                imagePath={obj.imagePath!}
-                certificatId={obj.certificatId!}
-              />
+            <Link href={`/certificats/${obj.certificatId!}`}>
+              <CertificatsComponentCart imagePath={obj.imagePath!} />
             </Link>
           </div>
         );
