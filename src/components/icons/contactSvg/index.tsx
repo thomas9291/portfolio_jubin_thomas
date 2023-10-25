@@ -46,7 +46,7 @@ export const PhoneEnd = () => {
     >
       <g
         id="SVGRepo_bgCarrier"
-        stroke-width="0"
+        strokeWidth="0"
         transform="translate(0,0), scale(1)"
       >
         <rect
@@ -64,7 +64,7 @@ export const PhoneEnd = () => {
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke="#CCCCCC"
-        stroke-width="1.6"
+        strokeWidth="1.6"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
@@ -72,7 +72,7 @@ export const PhoneEnd = () => {
         <defs> </defs>{" "}
         <g
           id="Page-1"
-          stroke-width="0.22400000000000003"
+          strokeWidth="0.22400000000000003"
           fill="none"
           fill-rule="evenodd"
         >
@@ -167,7 +167,7 @@ export const AudioPhone = () => {
       height="20px"
       viewBox="-0.5 0.5 42 42"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
         stroke-linecap="round"
@@ -219,7 +219,7 @@ export const Gmail = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
         strokeLinecap="round"
@@ -273,7 +273,7 @@ export const LinkedIn = () => {
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
         strokeLinecap="round"

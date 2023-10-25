@@ -9,8 +9,7 @@ export default function DetailCertificat() {
   const certificateObj = certificatsArray.find(
     (obj) => obj.certificatId === certificatId
   );
-  /* const regex: RegExp = /\n/;
-  const htmlString = certificateObj?.description?.replace("<br/>", regex); */
+
   return (
     <div>
       <CertificateCartDetail
