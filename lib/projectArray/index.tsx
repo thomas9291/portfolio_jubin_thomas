@@ -17,7 +17,7 @@ export const projectArray: Project[] = [
     ],
     date: "sep 2023",
     description:
-      "This is a full stack project. Developed with: Reactjs, Nextjs, css, Bootstrap, Mongodb and mongoose.This is a fitness website for all people who want to train effectively with a weight adaptation plan...",
+      "This is a full-stack project developed with React.js, Next.js, CSS, Bootstrap, MongoDB, and Mongoose. It is a fitness website designed for individuals looking to train effectively with a personalized weight adaptation plan. Thanks to a dedicated user database, users can track their progress and monitor their improvements over time.",
     videoURL:
       "https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/fitness-app.mp4",
     linkURL: "https://fitness-app-ten-rosy.vercel.app",
@@ -39,7 +39,7 @@ export const projectArray: Project[] = [
     ],
     date: "jul 2023",
     description:
-      "This is a full stack project, this project was my final project of the Spiced academy bootcamp berlin. Developed with: Reactjs, Nextjs, css, Bootstrap, Mongodb and mongoose. It's an application that's a sort of clone of Google Map for fishermen who want to remember their fishing spot...",
+      "This is a full-stack project and served as my final project during my time at the Spiced Academy boot camp in Berlin. It was developed using React.js, Next.js, CSS, Bootstrap, MongoDB, and Mongoose. This application functions as a kind of clone of Google Maps, tailored for fishermen who wish to keep track of their favorite fishing spots. Users can also filter their preferred spots based on various options, such as finding a good place for camping. With their own database, users have the ability to upload their photos and have exclusive access to them.",
     videoURL:
       "https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/fishing-place-app.mp4",
     linkURL: "https://fishing-place.vercel.app/",
@@ -51,7 +51,7 @@ export const projectArray: Project[] = [
     programs: ["javascript", "css", "html", "visualStudio", "github", "vercel"],
     date: "Apr 2022",
     description:
-      "This is a frontend project. Developed with: Vanilla javascript, css and html. in this project, I work with an API which gives me photos of new and old films. By typing the name of a film or an actor, you can find several films in reference to your search.",
+      "This is a frontend project developed using Vanilla JavaScript, CSS, and HTML. In this project, I work with an API that provides me with photos and information about films, whether they are recent or old. By entering the name of a film or an actor, you can discover several films related to your search.",
     videoURL:
       "https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/frontend-app.mp4",
     linkURL: "https://frontend-app-omega.vercel.app/",
@@ -63,7 +63,7 @@ export const projectArray: Project[] = [
     programs: ["reactjs", "css", "visualStudio", "github", "vercel", "html"],
     date: "May 2023",
     description:
-      "This is a React frontend project. Developed with Reactjs, css  and the local storage. In this project, I work with an API, which gives me random data on the whether. Depending on whether, we can make a list of things to do.",
+      "This is a React frontend project developed with React.js and CSS. In this project, I work with an API that provides me with random weather data, and I store and process this data in the local storage. Depending on the weather conditions, we can create a list of activities to do.",
     videoURL:
       "https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/weather-app.mp4",
     linkURL: "https://weather-app-two-rosy.vercel.app/",
