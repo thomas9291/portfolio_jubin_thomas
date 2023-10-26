@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import classes from "./Presentation.module.css";
 import Link from "next/link";
-import { ErrorComponent } from "../errorComponent";
+
+import Loading from "../loading";
 
 const PresentationText: React.FC = () => {
   const [isImage, setIsImage] = useState(false);
@@ -44,7 +45,7 @@ const PresentationText: React.FC = () => {
   }
   return (
     <>
-      <ErrorComponent />
+      <Loading />
     </>
   );
 };

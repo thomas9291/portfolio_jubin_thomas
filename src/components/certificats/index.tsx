@@ -4,7 +4,7 @@ import { certificatsArray } from "../../../lib/certificatArray";
 import { certificatDetail } from "../../../project.model";
 import classes from "./certificats.module.css";
 import Link from "next/link";
-import { ErrorComponent } from "../errorComponent";
+import Loading from "../loading";
 
 export const Certificats: React.FC = () => {
   const [isArray, setIsArray] = useState(false);
@@ -30,7 +30,7 @@ export const Certificats: React.FC = () => {
   }
   return (
     <>
-      <ErrorComponent />
+      <Loading />
     </>
   );
 };

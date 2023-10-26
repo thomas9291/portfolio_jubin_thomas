@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import CartVideo from "../cartVideo/index";
 import Link from "next/link";
 import { projectArray } from "../../../lib/projectArray";
-import { ErrorComponent } from "../errorComponent";
+import Loading from "../loading";
 
 // Import Swiper styles
 import "swiper/css";
@@ -78,7 +78,7 @@ export default function SlideVideo() {
   }
   return (
     <>
-      <ErrorComponent />
+      <Loading />
     </>
   );
 }
