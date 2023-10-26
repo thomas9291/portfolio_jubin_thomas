@@ -29,39 +29,41 @@ export default function SlideVideo() {
     return (
       <div className={classes.container}>
         <div className={classes.app}>
-          <Swiper
-            className={classes.swiper}
-            effect={"coverflow"}
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView={"auto"}
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
-            }}
-            pagination={true}
-            modules={[EffectCoverflow, Pagination]}
-          >
-            {projects.map((element: Project) => {
-              return (
-                <SwiperSlide
-                  key={element.projectId}
-                  className={classes.swiperSlide}
-                >
-                  <div className={classes.img}>
-                    <CartVideo
-                      title={element.title}
-                      videoURL={element.videoURL}
-                      projectId={element.projectId}
-                    />
-                  </div>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
+          <div>
+            <Swiper
+              className={classes.swiper}
+              effect={"coverflow"}
+              grabCursor={true}
+              centeredSlides={true}
+              slidesPerView={"auto"}
+              coverflowEffect={{
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+              }}
+              pagination={true}
+              modules={[EffectCoverflow, Pagination]}
+            >
+              {projects.map((element: Project) => {
+                return (
+                  <SwiperSlide
+                    key={element.projectId}
+                    className={classes.swiperSlide}
+                  >
+                    <div className={classes.img}>
+                      <CartVideo
+                        title={element.title}
+                        videoURL={element.videoURL}
+                        projectId={element.projectId}
+                      />
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </div>
           <div className={classes.info}>
             <p>To see more projects, I invite you to visit my github:</p>
             <p className={classes.link}>

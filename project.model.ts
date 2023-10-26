@@ -9,13 +9,13 @@ export interface Project {
   codeURL: string;
 }
 export interface ProjectObj {
-  date?: string | null;
-  title?: string | null;
-  programs?: React.JSX.Element[] | null;
-  description?: string | null;
-  videoURL?: string | null;
-  linkURL?: string | null;
-  codeURL?: string | null;
+  date?: string;
+  title?: string;
+  programs?: React.JSX.Element[];
+  description?: string;
+  videoURL?: string;
+  linkURL?: string;
+  codeURL?: string;
 }
 
 export interface certificats {
@@ -23,10 +23,10 @@ export interface certificats {
 }
 
 export interface certificatDetail {
-  certificatId?: string | null;
-  imagePath?: string | null;
-  title?: string | null;
-  date?: string | null;
-  description?: string | null;
-  linkURL?: string | null;
+  certificatId?: string;
+  imagePath?: string;
+  title?: string;
+  date?: string;
+  description?: string;
+  linkURL?: string;
 }

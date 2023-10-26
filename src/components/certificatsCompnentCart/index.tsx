@@ -18,6 +18,7 @@ export const CertificatsComponentCart: React.FC<certificats> = (
         height={450}
         width={450}
         alt="certificats from author"
+        priority
       />
     </>
   );
