@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { projectArray } from "../../../lib/projectArray";
 import { ProjectCart } from "@/components/ProjectCart";
 import { ErrorComponent } from "@/components/errorComponent";
+import { Project } from "../../../project.model";
 
 import {
   Aws,
@@ -22,9 +23,19 @@ import {
 } from "../../components/icons/svgItems/SvgItems";
 
 const ProjectDetail = () => {
+  const [isArray, setIsArray] = useState(false);
+  const [isProjectArray, setIsProjectArray] = useState([] as any);
   const router = useRouter();
   const { projectId } = router.query;
-  const projectObj = projectArray.find((obj) => obj.projectId === projectId);
+
+  useEffect(() => {
+    setIsProjectArray(projectArray as Project[]);
+    setIsArray(true);
+  }, []);
+
+  const projectObj = isProjectArray.find(
+    (obj: Project) => obj.projectId === projectId
+  );
 
   function getIcons() {
     let arr: React.JSX.Element[] = [];
@@ -74,10 +85,9 @@ const ProjectDetail = () => {
   }
   const iconsArray = getIcons();
 
-  if (!projectObj) {
+  if (!isArray || !iconsArray || !projectObj) {
     return <ErrorComponent />;
   }
-
   return (
     <div>
       <ProjectCart

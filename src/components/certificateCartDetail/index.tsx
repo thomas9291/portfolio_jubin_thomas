@@ -33,6 +33,7 @@ export const CertificateCartDetail: React.FC<certificatDetail> = (props) => {
           width={500}
           height={500}
           alt="image from author"
+          priority
         />
       </div>
     </div>

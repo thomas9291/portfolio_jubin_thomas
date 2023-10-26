@@ -2,10 +2,3 @@
   display: flex;
   flex-wrap: wrap;
 }
-.icons {
-  margin: 0.2rem;
-}
-.icons:hover {
-  transform: scale(1.5);
-  margin: 0.5rem;
-}

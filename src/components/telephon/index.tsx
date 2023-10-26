@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./telephon.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import {
   PhoneEnd,
   PhoneMicro,
@@ -19,16 +20,21 @@ export const Telephon = () => {
     <>
       <div className={classes.cadre}>
         <div className={classes.logo}>
-          <Image
-            style={imageStyle}
-            src={"/images/whatsapp-perfil/whatsapp_profil.jpg"}
-            width={48}
-            height={48}
-            alt="foto from thomas"
-            priority
-          />
+          <Link href={"/contact"}>
+            <Image
+              style={imageStyle}
+              src={"/images/whatsapp-perfil/whatsapp_profil.jpg"}
+              width={48}
+              height={48}
+              alt="foto from thomas"
+              priority
+            />
+          </Link>
           <div className={classes.header}>
-            <h3> Thomas</h3>
+            <h3>
+              {" "}
+              <Link href={"/contact"}>Thomas</Link>
+            </h3>
             <p className={classes.calling}>Calling...</p>
           </div>
         </div>

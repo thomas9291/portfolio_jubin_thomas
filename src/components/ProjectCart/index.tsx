@@ -35,7 +35,7 @@ export const ProjectCart: React.FC<ProjectObj> = (props) => {
             width="500"
             height="500"
           >
-            <source src={props.videoURL!} type="video/mp4" />
+            <source src={props.videoURL} type="video/mp4" />
           </video>
         </div>
       </div>
