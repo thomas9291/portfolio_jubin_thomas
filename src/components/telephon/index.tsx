@@ -11,10 +11,8 @@ import {
 } from "../icons/contactSvg";
 
 export const Telephon = () => {
-  const imageStyle: any = {
+  const imageStyle = {
     borderRadius: "50%",
-    width: "auto",
-    height: "auto",
   };
   return (
     <>

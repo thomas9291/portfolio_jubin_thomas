@@ -1,7 +1,7 @@
-import { ErrorComponent } from "../errorComponent";
 import classes from "./Cumputer.module.css";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Loading from "../loading";
 
 const Computer = () => {
   const [isVideo, setIsVideo] = useState(false);
@@ -36,7 +36,7 @@ const Computer = () => {
   }
   return (
     <>
-      <ErrorComponent />
+      <Loading />
     </>
   );
 };

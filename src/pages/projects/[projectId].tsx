@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { projectArray } from "../../../lib/projectArray";
 import { ProjectCart } from "@/components/ProjectCart";
-import { ErrorComponent } from "@/components/errorComponent";
 import { Project } from "../../../project.model";
-
+import Loading from "@/components/loading";
 import {
   Aws,
   Bootstrap,
@@ -86,7 +85,7 @@ const ProjectDetail = () => {
   const iconsArray = getIcons();
 
   if (!isArray || !iconsArray || !projectObj) {
-    return <ErrorComponent />;
+    return <Loading />;
   }
   return (
     <div>

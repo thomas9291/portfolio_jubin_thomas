@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { CertificateCartDetail } from "@/components/certificateCartDetail";
 import { certificatsArray } from "../../../lib/certificatArray";
 import { certificatDetail } from "../../../project.model";
-import { ErrorComponent } from "@/components/errorComponent";
+import Loading from "@/components/loading";
 
 export default function DetailCertificat() {
   const router = useRouter();
@@ -22,7 +22,7 @@ export default function DetailCertificat() {
   if (!isArray || !certificateObj) {
     return (
       <>
-        <ErrorComponent />
+        <Loading />
       </>
     );
   }
