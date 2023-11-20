@@ -79,4 +79,24 @@ export const certificatsArray: certificatDetail[] = [
     description:
       "Learn fundamental concepts of cloud computing and including storage, database, networking, virtualization, containers, and cloud architecture, Create an AWS Free Tier account and launch your first virtual servers (Amazon EC2 instances) on the AWS Cloud,  Configure elasticity, high availability and fault tolerance using Amazon EC2 Auto Scaling and Amazon Elastic Load Balancing, Create and configure storage services and upload files and objects using Amazon EBS, Amazon EFS and Amazon S3, Launch a relational database on Amazon RDS and a NoSQL database using Amazon DynamoDB, Automatically deploy infrastructure using code through AWS CloudFormation, Create a Platform as a Service (PaaS) application on AWS Elastic Beanstalk, Learn how to use DevOps tools on AWS to automate a continuous integration and continuous delivery (CI/CD) pipeline, Implement serverless computing and Docker containers on AWS using AWS Lambda and Amazon ECS, Create serverless event-driven architectures on Lambda, Create loosely coupled services with Amazon SQS and Amazon SNS",
   },
+  {
+    imagePath: "/images/certificats/aws-sdk-certificat.jpeg",
+    certificatId: "certificat9",
+    title: "AWS with Javascript & Nodejs",
+    date: "Nov.20.2023",
+    linkURL:
+      "https://www.udemy.com/course/amazon-web-services-aws-with-javascript-nodejs/",
+    description:
+      "In this course we are going to learn Amazon Web Services (AWS) with JavaScript & NodeJS, so Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud platform, offering over 200 fully featured services from data centers globally. Millions of customers including the fastest growing startups, largest enterprises, and leading government agencies are using AWS to lower costs. And you can use AWS with different programming languages, in this course we want to learn AWS with JavaScript & NodeJS.",
+  },
+  {
+    imagePath: "/images/certificats/AWS-developer-certificate.jpeg",
+    certificatId: "certificat10",
+    title: "AWS Developer Associate",
+    date: "Nov.09.2023",
+    linkURL:
+      "https://www.udemy.com/course/aws-certified-developer-associate-exam-training/",
+    description:
+      "This popular AWS Developer Associate Training for the AWS Certified Developer Associate certification exam (DVA-C02) is packed with over 16 hours of comprehensive video lessons, practical exercises, full-length practice exam simulation, quizzes and exam-crams. With our mixture of in-depth theory, architectural diagrams and hands-on training, you'll learn how to architect and build applications on Amazon Web Services, fully preparing you for the AWS Developer Certification exam. With this complete Udemy AWS Developer training course, you have everything you need to comfortably pass the AWS Developer Certification exam with confidence.",
+  },
 ];
