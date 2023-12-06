@@ -2,6 +2,27 @@ import { Project } from "../../project.model";
 
 export const projectArray: Project[] = [
   {
+    projectId: "p5",
+    title: "Kitsune Art Gallery",
+    programs: [
+      "html",
+      "css",
+      "javascript",
+      "tailwind",
+      "aws",
+      "vercel",
+      "github",
+      "visualStudio",
+    ],
+    date: "dec 2023",
+    description:
+      "This is a full-stack project employing Next.js and React for the frontend, while Node.js powers the backend. Design elements were crafted using Tailwind CSS and traditional CSS. Microservices are implemented using the AWS SDK, with DynamoDB serving as the database and AWS S3 for image storage. Additionally, local storage functionality allows each user to leave a note on the artwork. The website functions as an art gallery, enabling users to add photos, provide ratings, and leave comments. Notably, the site is responsive, ensuring a seamless experience across various devices.",
+    videoURL:
+      "https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/kitsune-art-galery.mp4",
+    linkURL: "https://kitsune-art-gallery.vercel.app",
+    codeURL: "https://github.com/thomas9291/kitsune-art-gallery",
+  },
+  {
     projectId: "p1",
     title: "Fitness App",
     programs: [
