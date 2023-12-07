@@ -20,20 +20,14 @@
 }
 
 .swiperSlide {
-  background-position: center;
-  background-size: cover;
-  width: 350px;
-  height: 350px;
+  width: 30%;
+}
+@media screen and (max-width: 800px) {
+  .swiperSlide {
+    width: 70%;
+  }
 }
 
-.swiperSlide img {
-  display: block;
-  width: 100%;
-}
-.img {
-  width: 300px;
-  height: 300px;
-}
 .info {
   display: flex;
   flex-direction: column;
