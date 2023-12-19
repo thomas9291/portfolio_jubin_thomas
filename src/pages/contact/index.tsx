@@ -3,7 +3,7 @@ import { ContactCarts } from "@/components/contactCarts";
 
 export default function contact() {
   return (
-    <div className="h-screen">
+    <div className="h-full">
       <ContactCarts />
     </div>
   );
