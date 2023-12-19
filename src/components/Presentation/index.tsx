@@ -29,8 +29,8 @@ const PresentationText: React.FC = () => {
             <Image
               src={isURL}
               alt="is loading..."
-              width={350}
-              height={350}
+              width={300}
+              height={300}
               style={imageStyle}
               priority
             />
