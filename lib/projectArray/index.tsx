@@ -38,7 +38,7 @@ export const projectArray: Project[] = [
     ],
     date: "sep 2023",
     description:
-      "This is a full-stack project developed with React.js, Next.js, CSS, Bootstrap, MongoDB, and Mongoose. It is a fitness website designed for individuals looking to train effectively with a personalized weight adaptation plan. Thanks to a dedicated user database, users can track their progress and monitor their improvements over time.",
+      "This is a full-stack project developed with React.js, Next.js, CSS, Bootstrap, MongoDB, Mongoose and the photo storage for this project is facilitated through Cloudinary. It is a fitness website designed for individuals looking to train effectively with a personalized weight adaptation plan. Thanks to a dedicated user database, users can track their progress and monitor their improvements over time. Furthermore, the platform offers a dynamic feature where every user has the ability to customize their training experience by adding exercises to their individual training plans. This not only enhances the user's engagement but also ensures a personalized and flexible approach to achieving fitness goals.",
     videoURL:
       "https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/fitness-app.mp4",
     linkURL: "https://fitness-app-ten-rosy.vercel.app",
