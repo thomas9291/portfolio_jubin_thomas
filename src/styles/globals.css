@@ -20,27 +20,43 @@ body {
 }
 .presentation {
   display: flex;
-  justify-content: center;
-  align-items: stretch;
+  flex-direction: column;
+  align-items: center;
 }
 .matrix {
   display: flex;
-  flex-direction: row;
-  background-image: url("/images/matrix/matrix.avif");
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
+  background-image: url("/images/matrix/matrix.avif");
 }
-@media (max-width: 629px) {
+
+.homePageContainer {
+  height: 100vh;
+}
+
+@media (min-width: 629px) {
   .presentation {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+  }
+  .containerPresentation {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    height: 300px;
   }
   .matrix {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("/images/matrix/matrix.avif");
+    height: 500px;
   }
 }
+
 .iconContainer {
   display: flex;
   justify-content: flex-end;

@@ -12,6 +12,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
+    "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
     "dotenv": "^16.3.1",
     "next": "13.5.4",
     "react": "^18",
