@@ -8,12 +8,6 @@ import Loading from "../loading";
 const PresentationText: React.FC = () => {
   const [isImage, setIsImage] = useState(false);
   const [isURL, setIsURL] = useState("" as any);
-  const imageStyle = {
-    borderRadius: "30rem",
-    margin: "1rem",
-    padding: "1rem",
-  };
-
   useEffect(() => {
     setIsURL(
       "https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/foto-graduation3.jpg"
@@ -25,13 +19,15 @@ const PresentationText: React.FC = () => {
     return (
       <div className="presentation">
         <div className={classes.img}>
+          <div className={classes.line1}></div>
+          <div className={classes.line2}></div>
           <Link href={"/aboutMe"}>
             <Image
+              className={classes.photo}
               src={isURL}
               alt="is loading..."
-              width={300}
-              height={300}
-              style={imageStyle}
+              width={500}
+              height={500}
               priority
             />
           </Link>

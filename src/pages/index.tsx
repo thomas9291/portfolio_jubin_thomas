@@ -5,11 +5,12 @@ import { Telephon } from "@/components/telephon";
 
 export default function homePage() {
   return (
-    <>
+    <div className="homePageContainer">
       <div className="iconContainer">
         <Icons />
       </div>
-      <div>
+
+      <div className="containerPresentation">
         <PresentationText />
       </div>
 
@@ -21,6 +22,6 @@ export default function homePage() {
           <Telephon />
         </div>
       </div>
-    </>
+    </div>
   );
 }
