@@ -57,6 +57,7 @@ body {
   }
   .iconContainer {
     animation: 6s slidein forwards;
+    overflow: hidden;
   }
 }
 
@@ -65,7 +66,6 @@ body {
   justify-content: flex-end;
   margin: 0 1rem 0 1rem;
   padding: 1rem;
-  overflow: hidden;
 }
 @keyframes slidein {
   from {
