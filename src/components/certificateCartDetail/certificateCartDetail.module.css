@@ -19,7 +19,7 @@
 .header1 {
   font-size: x-large;
   font-family: "Times New Roman", Times, serif;
-  color: var(--cocoa-brown-50);
+  color: var(--color-link);
   animation: ease-in 1s slidein;
 }
 .header2 {

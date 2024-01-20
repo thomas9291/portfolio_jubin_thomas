@@ -2,3 +2,11 @@
   display: flex;
   flex-wrap: wrap;
 }
+.icons {
+  margin: 0.2rem;
+}
+.icons:hover {
+  cursor: pointer;
+  transform: scale(1.2) rotate(-360deg);
+  transition: all 1s ease-out;
+}

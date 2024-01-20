@@ -55,6 +55,9 @@ body {
     background-image: url("/images/matrix/matrix.avif");
     height: 500px;
   }
+  .iconContainer {
+    animation: 6s slidein forwards;
+  }
 }
 
 .iconContainer {
@@ -62,4 +65,14 @@ body {
   justify-content: flex-end;
   margin: 0 1rem 0 1rem;
   padding: 1rem;
+  overflow: hidden;
+}
+@keyframes slidein {
+  from {
+    transform: translate(1000px, 0px);
+  }
+
+  to {
+    transform: translate(0px, 0px);
+  }
 }

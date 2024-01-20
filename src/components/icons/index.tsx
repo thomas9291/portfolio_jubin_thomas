@@ -21,51 +21,33 @@ import {
 const Icons = () => {
   return (
     <div className={classes.container}>
-      <div>
-        <Html5 />
-      </div>
-      <div>
-        <Css3 />
-      </div>
-      <div>
-        <VanillaJs />
-      </div>
-      <div>
-        <ReactSvg />
-      </div>
+      <Html5 />
 
-      <div>
-        <ExpressJs />
-      </div>
-      <div>
-        <Github />
-      </div>
-      <div>
-        <Mongodb />
-      </div>
+      <Css3 />
 
-      <div>
-        <Nextjs />
-      </div>
-      <div>
-        <Tailwind />
-      </div>
-      <div>
-        <Typescript />
-      </div>
-      <div>
-        <VisualStudio />
-      </div>
-      <div>
-        <Bootstrap />
-      </div>
-      <div>
-        <Aws />
-      </div>
+      <VanillaJs />
 
-      <div>
-        <Vercel />
-      </div>
+      <ReactSvg />
+
+      <ExpressJs />
+
+      <Github />
+
+      <Mongodb />
+
+      <Nextjs />
+
+      <Tailwind />
+
+      <Typescript />
+
+      <VisualStudio />
+
+      <Bootstrap />
+
+      <Aws />
+
+      <Vercel />
     </div>
   );
 };
