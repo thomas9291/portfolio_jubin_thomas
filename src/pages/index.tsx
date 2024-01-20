@@ -18,6 +18,7 @@ export default function homePage() {
         <div>
           <Computer />
         </div>
+
         <div>
           <Telephon />
         </div>

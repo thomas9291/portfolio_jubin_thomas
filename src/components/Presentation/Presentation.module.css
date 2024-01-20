@@ -48,6 +48,7 @@
 .headers2 {
   font-size: x-large;
   font-weight: 500;
+  color: var(--color-link);
 }
 
 .containerText {
