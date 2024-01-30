@@ -1,11 +1,17 @@
 import React from "react";
 import { AboutMeComponent } from "@/components/aboutMeComponent";
+import PresentationText from "@/components/Presentation";
 
 const aboutMe = () => {
   return (
-    <div className="flex flex-col items-center">
-      <AboutMeComponent />
-    </div>
+    <>
+      <div className="containerPresentation">
+        <PresentationText />
+      </div>
+      <div className="flex flex-col items-center">
+        <AboutMeComponent />
+      </div>
+    </>
   );
 };
 
