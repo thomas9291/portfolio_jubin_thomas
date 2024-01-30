@@ -3,3 +3,8 @@
   flex-direction: column;
   justify-content: center;
 }
+.containerNav {
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+}
