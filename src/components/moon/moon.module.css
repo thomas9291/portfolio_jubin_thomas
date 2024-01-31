@@ -4,12 +4,11 @@
   border-radius: 50%;
   background-color: #fde767;
   position: relative;
-  top: 40px;
-  left: 40px;
   box-shadow: 0 0 20px 0 #fde767, 0 0 50px 0 #fde767, 0 0 80px 0 #fde767,
     0 0 120px 0 #fde767;
   filter: blur(0.5px);
 }
+
 .crater {
   border-radius: 50%;
   background-color: #ffa732;

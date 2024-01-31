@@ -22,6 +22,9 @@
   text-align: center;
   letter-spacing: 5px;
 }
+.logoBox h2 {
+  opacity: 0.2;
+}
 .logoBox h3 {
   text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff;
 }
@@ -43,6 +46,7 @@
   transform: rotate(-45deg) translateY(-200px);
   opacity: 0;
   filter: blur(20px);
+  cursor: pointer;
 }
 
 .logo li:nth-child(1) {
@@ -111,7 +115,7 @@
 
 .topLayer {
   position: absolute;
-  left: -px;
+  left: 0;
   width: 100%;
   height: 60px;
   background-color: #3c1a8e;
