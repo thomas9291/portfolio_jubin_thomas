@@ -1,5 +1,6 @@
 import Moon from "@/components/moon";
 import LogoHomePage from "@/components/logoHomePage";
+import Stars from "@/components/starsHomePage";
 
 export default function homePage() {
   return (
@@ -7,6 +8,9 @@ export default function homePage() {
       <div className="homepage-part1">
         <div className="moon">
           <Moon />
+        </div>
+        <div className="starsContainer">
+          <Stars />
         </div>
         <div className="logoContainer">
           <LogoHomePage />
