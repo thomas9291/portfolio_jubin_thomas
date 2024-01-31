@@ -1,10 +1,11 @@
 import Moon from "@/components/moon";
 import LogoHomePage from "@/components/logoHomePage";
 import Stars from "@/components/starsHomePage";
+import Dune from "@/components/dune";
 
 export default function homePage() {
   return (
-    <div className="homePageContainer">
+    <>
       <div className="homepage-part1">
         <div className="moon">
           <Moon />
@@ -15,7 +16,10 @@ export default function homePage() {
         <div className="logoContainer">
           <LogoHomePage />
         </div>
+        <div className="duneContainer">
+          <Dune />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

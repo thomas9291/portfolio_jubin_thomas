@@ -25,8 +25,7 @@ const Stars = () => {
       const duration = Math.random() * 2;
       star.style.animationDuration = `${duration + 1}s`;
       starsContainer.style.width = "100%";
-      starsContainer.style.height = "80%";
-
+      starsContainer.style.height = "100%";
       starsContainer.appendChild(star);
     };
 
@@ -44,7 +43,7 @@ const Stars = () => {
     };
   }, [starsContainerRef]);
 
-  return <section ref={starsContainerRef} className={classes.stars}></section>;
+  return <div ref={starsContainerRef} className={classes.stars}></div>;
 };
 
 export default Stars;

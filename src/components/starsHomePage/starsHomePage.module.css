@@ -4,7 +4,7 @@
   border-radius: 50%;
   box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff;
   animation: stars linear infinite;
-  z-index: 20;
+  z-index: -1;
 }
 
 @keyframes stars {

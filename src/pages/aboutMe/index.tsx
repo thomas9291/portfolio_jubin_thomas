@@ -8,7 +8,7 @@ const aboutMe = () => {
       <div className="containerPresentation">
         <PresentationText />
       </div>
-      <div className="flex flex-col items-center">
+      <div>
         <AboutMeComponent />
       </div>
     </>
