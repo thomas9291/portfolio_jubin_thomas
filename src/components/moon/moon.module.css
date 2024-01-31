@@ -1,0 +1,64 @@
+.moonContainer {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fde767;
+  position: relative;
+  top: 40px;
+  left: 40px;
+  box-shadow: 0 0 20px 0 #fde767, 0 0 50px 0 #fde767, 0 0 80px 0 #fde767,
+    0 0 120px 0 #fde767;
+  filter: blur(0.5px);
+}
+.crater {
+  border-radius: 50%;
+  background-color: #ffa732;
+  position: absolute;
+  filter: contrast(3);
+  box-shadow: 0 0 5px 0 #fff78a, 0 0 25px 0 #fff78a, 0 0 50px 0 #fff78a,
+    0 0 75px 0 #fff78a;
+}
+.craterSm {
+  width: 5px;
+  height: 5px;
+}
+.craterMd {
+  width: 10px;
+  height: 10px;
+}
+.crater1 {
+  top: 10px;
+  left: 10px;
+}
+.crater2 {
+  top: 12px;
+  left: 25px;
+}
+.crater3 {
+  top: 42px;
+  left: 35px;
+}
+.crater4 {
+  top: 42px;
+  left: 15px;
+}
+.crater5 {
+  top: 12px;
+  left: 45px;
+}
+.crater6 {
+  top: 25px;
+  left: 5px;
+}
+.crater7 {
+  top: 28px;
+  left: 25px;
+}
+.crater8 {
+  top: 25px;
+  left: 45px;
+}
+.crater9 {
+  top: 45px;
+  left: 45px;
+}

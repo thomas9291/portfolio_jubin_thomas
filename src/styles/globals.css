@@ -7,22 +7,12 @@ body {
 
   --color-link: rgb(114, 232, 70);
   --color-link-hover: rgb(85, 80, 220);
-  background: rgb(140, 105, 223);
-  background: linear-gradient(
-    180deg,
-    rgba(140, 105, 223, 1) 10%,
-    rgba(59, 29, 253, 1) 97%,
-    rgba(252, 176, 69, 1) 100%
-  );
+  background-color: #3c1a8e;
 }
 .presentation {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.homePageContainer {
-  height: 100vh;
 }
 
 @media (min-width: 629px) {
@@ -38,4 +28,20 @@ body {
     height: 300px;
     margin-top: 50px;
   }
+}
+
+.homepage-part1 {
+  height: 100vh;
+  position: relative;
+}
+.moon {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.logoContainer {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
