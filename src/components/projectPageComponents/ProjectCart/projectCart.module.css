@@ -87,3 +87,34 @@
     width: 60%;
   }
 }
+
+.header1 {
+  position: relative;
+  font-size: 2.5em;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff2;
+  text-align: center;
+}
+@keyframes animateText {
+  0%,
+  20% {
+    color: #fff2;
+  }
+
+  21%,
+  79% {
+    color: #0f0;
+  }
+
+  80%,
+  100% {
+    color: #fff2;
+  }
+}
+
+.header1 span {
+  position: relative;
+  animation: animateText 1s linear infinite;
+}

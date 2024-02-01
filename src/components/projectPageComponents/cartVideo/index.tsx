@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import classes from "./cartVideo.module.css";
 import ButtonHoverEffect from "@/components/buttonHoverEffect";
+import { log } from "console";
 
 interface cartVideoSlide {
   title: string;
@@ -11,7 +12,7 @@ interface cartVideoSlide {
 const CartVideo: React.FC<cartVideoSlide> = (props) => {
   return (
     <>
-      <h1 className={classes.title}>{props.title}</h1>
+      <h2 className={classes.title}>{props.title}</h2>
       <div className={classes.containerVideo}>
         <video
           className={classes.screen}
