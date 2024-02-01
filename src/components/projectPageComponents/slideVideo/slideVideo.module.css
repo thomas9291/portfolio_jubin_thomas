@@ -1,8 +1,6 @@
 .app {
   height: 100vh;
   position: relative;
-  background: linear-gradient(var(--cocoa-brown-950), var(--cocoa-brown-200));
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   margin: 0;
   padding: 0;
@@ -10,6 +8,8 @@
 .container {
   display: flex;
   flex-direction: column;
+  background: #0c2461;
+  height: 100vh;
 }
 
 .swiper {
