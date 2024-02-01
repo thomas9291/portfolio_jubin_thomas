@@ -13,14 +13,14 @@
   border-radius: 1rem;
   background-color: rgba(73, 70, 70, 0.86);
 }
-.btn {
+/* .btn {
   text-align: center;
   background-color: var(--cocoa-brown-900);
   color: var(--cocoa-brown-100);
   padding: 0.5rem;
   margin: 0.5rem;
   border-radius: 1rem;
-}
+} */
 .containerBtn {
   display: flex;
   flex-direction: column;

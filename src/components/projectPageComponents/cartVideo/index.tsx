@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./cartVideo.module.css";
-import Link from "next/link";
+import ButtonHoverEffect from "@/components/buttonHoverEffect";
 
 interface cartVideoSlide {
   title: string;
@@ -24,9 +24,9 @@ const CartVideo: React.FC<cartVideoSlide> = (props) => {
         </video>
       </div>
       <div className={classes.containerBtn}>
-        <Link href={`/projects/${props.projectId}`} className={classes.btn}>
+        <ButtonHoverEffect href={`/projects/${props.projectId}`}>
           more details
-        </Link>
+        </ButtonHoverEffect>
       </div>
     </>
   );
