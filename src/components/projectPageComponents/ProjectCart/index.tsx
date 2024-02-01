@@ -1,14 +1,36 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { ProjectObj } from "../../../../project.model";
 import Link from "next/link";
 import { Github } from "../../icons/svgItems/SvgItems";
 import classes from "./projectCart.module.css";
 
 export const ProjectCart: React.FC<ProjectObj> = (props) => {
+  const textContainerRef = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    const textContainer = textContainerRef.current;
+    if (!textContainer) {
+      return;
+    }
+    const createAnimationHeader = () => {
+      let htmlSpans = textContainer?.innerText
+        .split("")
+        .map((letter, i) => {
+          return `<span style= "animation-duration: ${
+            Math.random() * 5
+          }s; filter: hue-rotate(${i * 50}deg)">${letter}</span>`;
+        })
+        .join("");
+      textContainer!.innerHTML = htmlSpans;
+    };
+    createAnimationHeader();
+  }, [textContainerRef]);
   return (
     <>
       <div className={classes.title}>
-        <h1>{props.title}</h1>
+        <h1 ref={textContainerRef} className={classes.header1}>
+          {props.title}
+        </h1>
       </div>
       <div className={classes.iconsContainer}>{props.programs}</div>
       <div className={classes.linkURL}>
