@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import CartVideo from "../cartVideo/index";
 import Link from "next/link";
-import { projectArray } from "../../../lib/projectArray";
-import Loading from "../loading";
+import { projectArray } from "../../../../lib/projectArray";
+import Loading from "../../loading";
 
 // Import Swiper styles
 import "swiper/css";
@@ -14,8 +14,8 @@ import "swiper/css/pagination";
 import classes from "./slideVideo.module.css";
 
 import { EffectCoverflow, Pagination } from "swiper/modules";
-import { Github } from "../icons/svgItems/SvgItems";
-import { Project } from "../../../project.model";
+import { Github } from "../../icons/svgItems/SvgItems";
+import { Project } from "../../../../project.model";
 
 export default function SlideVideo() {
   const [projects, setProject] = useState([] as any);

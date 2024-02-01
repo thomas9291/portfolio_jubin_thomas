@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { CertificatsComponentCart } from "@/components/certificatsCompnentCart";
-import { certificatsArray } from "../../../lib/certificatArray";
-import { certificatDetail } from "../../../project.model";
+import { CertificatsComponentCart } from "@/components/certificatPageComponents/certificatsCompnentCart";
+import { certificatsArray } from "../../../../lib/certificatArray";
+import { certificatDetail } from "../../../../project.model";
 import classes from "./certificats.module.css";
 import Link from "next/link";
-import Loading from "../loading";
+import Loading from "../../loading";
 
 export const Certificats: React.FC = () => {
   const [isArray, setIsArray] = useState(false);

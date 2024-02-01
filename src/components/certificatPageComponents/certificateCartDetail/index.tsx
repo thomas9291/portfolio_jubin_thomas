@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import classes from "./certificateCartDetail.module.css";
 import Link from "next/link";
-import { certificatDetail } from "../../../project.model";
+import { certificatDetail } from "../../../../project.model";
 
 export const CertificateCartDetail: React.FC<certificatDetail> = (props) => {
   const imageStyle = {
