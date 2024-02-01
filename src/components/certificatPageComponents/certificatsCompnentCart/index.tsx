@@ -17,7 +17,7 @@ export const CertificatsComponentCart: React.FC<certificats> = (
         src={props.imagePath}
         height={450}
         width={450}
-        alt="certificats from author"
+        alt="certificates from author"
         priority
       />
     </>
