@@ -1,88 +1,36 @@
 .container {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
-  padding: 1rem;
-  align-items: center;
-}
-.videoContainer {
-  position: relative;
-}
-.screen {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
-@media (min-width: 600px) {
-  .container {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  .videoContainer {
-    width: 50%;
-    height: 100vh;
-  }
-  .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--cocoa-brown-200);
-    width: 50%;
-    height: 500px;
-    margin-right: 1rem;
-  }
+  align-items: center;
+  height: 60vh;
 }
-@media (min-width: 700px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .text {
-    height: auto;
-  }
-  .videoContainer {
-    width: 40%;
-    height: 100vh;
-    margin-top: 1rem;
-  }
-  .link {
-    margin: 0.2rem;
-  }
+.iconsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem;
 }
-@media (max-width: 600px) {
-  .text {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    background-color: var(--cocoa-brown-900);
-    color: var(--cocoa-brown-200);
-    flex-wrap: wrap;
-    align-items: center;
-  }
+.iconsContainer li {
+  list-style: none;
 }
 .title {
-  color: var(--cocoa-brown-50);
   font-size: xx-large;
   text-align: center;
 }
 .date {
-  color: var(--cocoa-brown-100);
+  text-align: center;
   font-size: larger;
   margin-bottom: 1rem;
+  color: white;
 }
 .description {
   font-family: "Times New Roman", Times, serif;
+  color: white;
 }
 
 .link {
-  margin: 1rem;
+  margin-top: 1rem;
   animation: 0.5s ease-in infinite jumping;
   display: flex;
   flex-direction: row;
@@ -92,6 +40,35 @@
   transform: scale(1.2);
   animation: none;
 }
+
+.text {
+  margin: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.linkURL {
+  text-align: center;
+  color: rgb(114, 232, 70);
+}
+.linkURL a {
+  color: white;
+  text-decoration: none;
+}
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 6px solid black;
+  border-radius: 20px;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  margin: 1rem;
+}
+
 @keyframes jumping {
   from {
     transform: translateY(3px);
@@ -101,20 +78,12 @@
     transform: translateY(-3px);
   }
 }
+@media screen and (min-width: 800px) {
+  .screen {
+    width: 100%;
+  }
 
-.linkURL {
-  text-align: center;
-  color: rgb(114, 232, 70);
-}
-
-.screen {
-  border: 6px solid black;
-  border-radius: 1rem;
-  width: 100%;
-}
-.iconsContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 1rem;
+  .text {
+    width: 60%;
+  }
 }

@@ -23,21 +23,22 @@ export const ProjectCart: React.FC<ProjectObj> = (props) => {
         </Link>
       </div>
       <div className={classes.container}>
+        <video
+          autoPlay
+          loop
+          width="400"
+          height="400"
+          className={classes.videoContainer}
+        >
+          <source
+            src={props.videoURL}
+            type="video/mp4"
+            className={classes.screen}
+          />
+        </video>
         <div className={classes.text}>
           <p className={classes.date}>{props.date}</p>
           <p className={classes.description}>{props.description}</p>
-        </div>
-
-        <div className={classes.videoContainer}>
-          <video
-            className={classes.screen}
-            autoPlay
-            loop
-            width="500"
-            height="500"
-          >
-            <source src={props.videoURL} type="video/mp4" />
-          </video>
         </div>
       </div>
     </>

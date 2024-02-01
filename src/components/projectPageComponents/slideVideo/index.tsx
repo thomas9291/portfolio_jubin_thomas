@@ -66,11 +66,11 @@ export default function SlideVideo() {
           </div>
           <div className={classes.info}>
             <p>To see more projects, I invite you to visit my github:</p>
-            <p className={classes.link}>
+            <div className={classes.link}>
               <Link href={"https://github.com/thomas9291"} target="_blank">
                 <Github />
               </Link>
-            </p>
+            </div>
           </div>
         </div>
       </div>

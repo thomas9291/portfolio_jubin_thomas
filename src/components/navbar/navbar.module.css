@@ -1,23 +1,33 @@
-.navbar,
 .active {
   background-color: black;
   z-index: 100;
-  height: 13%;
+  height: 80px;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
+  transition: 2s;
+}
+.active .btn,
+.navbar .btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+.navbar .btn {
+  bottom: 20px;
+  left: 130px;
+}
+.active .btn {
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+.navbar li {
+  opacity: 0;
 }
 @media screen and (max-width: 600px) {
-  .btn {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    width: 40px;
-    height: 40px;
-    transform: translateY(-50%);
-  }
   .navbar li {
     opacity: 0;
   }
@@ -75,7 +85,7 @@
     letter-spacing: 3px;
   }
 }
-.navbar ul {
+.active ul {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -83,11 +93,11 @@
   justify-content: center;
   align-items: center;
 }
-.navbar ul li {
+.active ul li {
   list-style: none;
-  margin: 1rem;
+  margin: 0.4rem;
 }
-.navbar ul li a {
+.active ul li a {
   position: relative;
   display: block;
   text-decoration: none;
@@ -98,11 +108,11 @@
   transition: 0.5s;
   transition-delay: 0.5s;
 }
-.navbar ul li a:hover {
+.active ul li a:hover {
   color: rgba(255, 255, 255, 0.3);
   transition-delay: 0s;
 }
-.navbar ul li a:before {
+.active ul li a:before {
   position: absolute;
   content: attr(data-text);
   top: 50%;
@@ -119,7 +129,7 @@
   transition: 0.2s;
   opacity: 0;
 }
-.navbar li:hover a:before {
+.active li:hover a:before {
   opacity: 1;
   transition-delay: 0.5s;
   letter-spacing: 3px;

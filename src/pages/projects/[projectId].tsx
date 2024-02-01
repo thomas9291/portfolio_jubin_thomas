@@ -88,7 +88,7 @@ const ProjectDetail = () => {
     return <Loading />;
   }
   return (
-    <div>
+    <>
       <ProjectCart
         title={projectObj?.title}
         date={projectObj?.date}
@@ -102,7 +102,7 @@ const ProjectDetail = () => {
         linkURL={projectObj?.linkURL}
         codeURL={projectObj?.codeURL}
       />
-    </div>
+    </>
   );
 };
 
