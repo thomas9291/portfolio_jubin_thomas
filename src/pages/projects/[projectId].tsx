@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { projectArray } from "../../../lib/projectArray";
-import { ProjectCart } from "@/components/ProjectCart";
+import { ProjectCart } from "@/components/projectPageComponents/ProjectCart";
 import { Project } from "../../../project.model";
 import Loading from "@/components/loading";
 import {

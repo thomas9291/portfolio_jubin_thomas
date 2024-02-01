@@ -1,4 +1,4 @@
-import { Certificats } from "../../components/certificats";
+import { Certificats } from "../../components/certificatPageComponents/certificats";
 
 export default function certificats() {
   return (

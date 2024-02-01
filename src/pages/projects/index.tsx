@@ -1,5 +1,5 @@
 import React from "react";
-import SlideVideo from "../../components/slideVideo";
+import SlideVideo from "../../components/projectPageComponents/slideVideo";
 
 export default function projects() {
   return (

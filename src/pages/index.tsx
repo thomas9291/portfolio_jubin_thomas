@@ -1,25 +1,9 @@
-import Moon from "@/components/moon";
-import LogoHomePage from "@/components/logoHomePage";
-import Stars from "@/components/starsHomePage";
-import Dune from "@/components/dune";
+import HomePagePart1 from "@/components/homePagePart1";
 
 export default function homePage() {
   return (
-    <>
-      <div className="homepage-part1">
-        <div className="moon">
-          <Moon />
-        </div>
-        <div className="starsContainer">
-          <Stars />
-        </div>
-        <div className="logoContainer">
-          <LogoHomePage />
-        </div>
-        <div className="duneContainer">
-          <Dune />
-        </div>
-      </div>
-    </>
+    <div>
+      <HomePagePart1 />
+    </div>
   );
 }

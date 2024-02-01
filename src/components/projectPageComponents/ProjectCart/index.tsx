@@ -1,7 +1,7 @@
 import React from "react";
-import { ProjectObj } from "../../../project.model";
+import { ProjectObj } from "../../../../project.model";
 import Link from "next/link";
-import { Github } from "../icons/svgItems/SvgItems";
+import { Github } from "../../icons/svgItems/SvgItems";
 import classes from "./projectCart.module.css";
 
 export const ProjectCart: React.FC<ProjectObj> = (props) => {

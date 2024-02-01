@@ -3,7 +3,7 @@ import Image from "next/image";
 import classes from "./Presentation.module.css";
 import Link from "next/link";
 
-import Loading from "../loading";
+import Loading from "../../loading";
 
 const PresentationText: React.FC = () => {
   const [isImage, setIsImage] = useState(false);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { CertificateCartDetail } from "@/components/certificateCartDetail";
+import { CertificateCartDetail } from "@/components/certificatPageComponents/certificateCartDetail";
 import { certificatsArray } from "../../../lib/certificatArray";
 import { certificatDetail } from "../../../project.model";
 import Loading from "@/components/loading";

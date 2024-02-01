@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { certificats } from "../../../project.model";
+import { certificats } from "../../../../project.model";
 
 export const CertificatsComponentCart: React.FC<certificats> = (
   props: certificats
