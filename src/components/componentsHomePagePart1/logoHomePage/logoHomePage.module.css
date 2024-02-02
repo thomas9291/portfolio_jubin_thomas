@@ -29,7 +29,7 @@
   text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 810px) {
   .logo li {
     font-size: 60px;
   }
@@ -119,7 +119,7 @@
   left: 0;
   width: 100%;
   height: 60px;
-  background-color: #3c1a8e;
+  background-color: black;
   animation: toplayer 10s linear infinite;
 }
 @keyframes toplayer {

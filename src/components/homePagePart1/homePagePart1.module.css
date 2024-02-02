@@ -5,8 +5,9 @@
 
 .moon {
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 15%;
+  right: 50%;
+  transform: translate(-50%, -50%);
 }
 .logoContainer {
   position: absolute;
@@ -29,4 +30,11 @@
   height: 40%;
   margin: 0;
   padding: 0;
+}
+@media screen and (min-width: 810px) {
+  .moon {
+    top: 20%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+  }
 }

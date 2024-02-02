@@ -14,13 +14,7 @@ const CartVideo: React.FC<cartVideoSlide> = (props) => {
     <>
       <h2 className={classes.title}>{props.title}</h2>
       <div className={classes.containerVideo}>
-        <video
-          className={classes.screen}
-          autoPlay
-          loop
-          width="500"
-          height="500"
-        >
+        <video className={classes.screen} width="500" height="500">
           <source src={props.videoURL} type="video/mp4" />
         </video>
       </div>

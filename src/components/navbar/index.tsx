@@ -8,7 +8,7 @@ function NavBar() {
     setIsActive(!isActive);
   };
   return (
-    <nav className={isActive ? classes.navbar : classes.active}>
+    <nav className={isActive ? classes.active : classes.navbar}>
       <ul>
         <li>
           <Link href={"/"} data-text="Home">
