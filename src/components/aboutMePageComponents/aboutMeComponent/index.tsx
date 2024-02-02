@@ -4,7 +4,6 @@ import classes from "./aboutMe.module.css";
 export const AboutMeComponent = () => {
   return (
     <div className={classes.container}>
-      <h1 className={classes.header}>Hello my name is Thomas Jubin</h1>
       <h2 className={classes.header2}>I am passionate about programming!</h2>
       <div className={classes.text}>
         <p>
