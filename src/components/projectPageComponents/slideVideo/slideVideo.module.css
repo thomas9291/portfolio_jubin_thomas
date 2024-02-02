@@ -4,6 +4,7 @@
   font-size: 14px;
   margin: 0;
   padding: 0;
+  z-index: 0;
 }
 .container {
   display: flex;
@@ -21,6 +22,11 @@
 .swiperSlide {
   width: 30%;
 }
+.info p {
+  color: white;
+  text-shadow: 0 0 20px blue, 0 0 50px blue, 0 0 100px blue;
+}
+
 @media screen and (max-width: 800px) {
   .swiperSlide {
     width: 70%;
@@ -31,12 +37,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--cocoa-brown-50);
   margin: 1rem;
 }
 .link {
   margin: 1rem;
   animation: 0.5s ease-in infinite jumping;
+  color: white;
 }
 .link:hover {
   transform: scale(1.2);

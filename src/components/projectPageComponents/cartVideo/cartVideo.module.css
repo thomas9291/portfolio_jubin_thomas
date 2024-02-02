@@ -16,10 +16,19 @@
 }
 .title {
   position: relative;
-  font-size: 3em;
+  font-size: 1.5em;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   font-weight: 500;
-  color: #fff2;
+  /* color: #fff2; */
   text-align: center;
+  color: white;
+  text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff,
+    0 0 80px #00b3ff;
+}
+@media screen and (min-width: 810px) {
+  .title {
+    font-size: 3em;
+    letter-spacing: 0.25em;
+  }
 }
