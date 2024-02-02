@@ -17,24 +17,23 @@ const PresentationText: React.FC = () => {
 
   if (isImage) {
     return (
-      <div className="presentation">
+      <div className={classes.presentationContainer}>
         <div className={classes.img}>
           <div className={classes.line1}></div>
           <div className={classes.line2}></div>
-          <Link href={"/aboutMe"}>
-            <Image
-              className={classes.photo}
-              src={isURL}
-              alt="is loading..."
-              width={500}
-              height={500}
-              priority
-            />
-          </Link>
+
+          <Image
+            className={classes.photo}
+            src={isURL}
+            alt="is loading..."
+            width={500}
+            height={500}
+            priority
+          />
         </div>
         <div className={classes.containerText}>
           <h1 className={classes.headers2}>Hi, MY NAME IS THOMAS JUBIN</h1>
-          <h1 className={classes.headers}>I´M A FULL-STACK WEB DEVELOPER</h1>
+          <h1 className={classes.headers}>I´M FULL-STACK WEB DEVELOPER</h1>
         </div>
       </div>
     );
