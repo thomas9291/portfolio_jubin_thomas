@@ -38,7 +38,7 @@ export const CertificateCartDetail: React.FC<certificatDetail> = (props) => {
         </h1>
         <h2 className={classes.header2}>{props.date}</h2>
         <p className={classes.descriptionText}>{props.description}</p>
-        <div>
+        <div className={classes.btnContainer}>
           <ButtonHoverEffect href={props.linkURL!}>
             more details
           </ButtonHoverEffect>

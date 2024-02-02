@@ -1,38 +1,54 @@
 .img {
+  width: 90%;
   display: flex;
-  justify-content: center;
-  margin: 1rem;
+}
+.img img {
+  width: 100%;
+  height: 100%;
 }
 .container {
+  margin: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.header1 {
+  position: relative;
+  font-size: 1.5em;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff2;
+  text-align: center;
+}
+.header1 span {
+  position: relative;
+  animation: animateText 1s linear infinite;
 }
 .text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
+  text-align: center;
   color: whitesmoke;
+  font-size: larger;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 0 0 20px blue, 0 0 40px blue, 0 0 80px blue;
 }
-/* .header1 {
-  font-size: x-large;
-  font-family: "Times New Roman", Times, serif;
-  color: var(--color-link);
-  animation: ease-in 1s slidein;
-} */
+
 .header2 {
-  margin: 1rem;
+  margin-top: 0.5rem;
   font-size: large;
-  font-family: "Times New Roman", Times, serif;
-  color: var(--cocoa-brown-100);
+  font-family: fantasy;
   animation: ease-in 2s slideinReverse;
+  color: red;
 }
 .descriptionText {
-  padding: 1rem;
   animation: ease-in 3s visiblility;
+}
+.btnContainer {
+  margin: 1rem 0;
 }
 @keyframes slidein {
   from {
@@ -68,7 +84,7 @@
     opacity: 1;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1120px) {
   .container {
     display: flex;
     flex-direction: row;
@@ -81,16 +97,12 @@
   .text {
     width: 100%;
   }
+  .header1 {
+    font-size: 3em;
+    letter-spacing: 0.25em;
+  }
 }
-.header1 {
-  position: relative;
-  font-size: 3em;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #fff2;
-  text-align: center;
-}
+
 @keyframes animateText {
   0%,
   20% {
@@ -106,9 +118,4 @@
   100% {
     color: #fff2;
   }
-}
-
-.header1 span {
-  position: relative;
-  animation: animateText 1s linear infinite;
 }

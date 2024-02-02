@@ -9,7 +9,7 @@ body {
 
   --color-link: rgb(114, 232, 70);
   --color-link-hover: rgb(85, 80, 220);
-  background-color: #3c1a8e;
+  background-color: black;
 }
 .presentation {
   display: flex;
