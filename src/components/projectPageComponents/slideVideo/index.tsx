@@ -28,50 +28,48 @@ export default function SlideVideo() {
   if (isArray) {
     return (
       <div className={classes.container}>
+        <div className={classes.info}>
+          <p>To see more projects, I invite you to visit my github:</p>
+          <div className={classes.link}>
+            <Link href={"https://github.com/thomas9291"} target="_blank">
+              <Github />
+            </Link>
+          </div>
+        </div>
         <div className={classes.app}>
-          <div>
-            <Swiper
-              className={classes.swiper}
-              effect={"coverflow"}
-              grabCursor={true}
-              centeredSlides={true}
-              slidesPerView={"auto"}
-              coverflowEffect={{
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-              }}
-              pagination={true}
-              modules={[EffectCoverflow, Pagination]}
-            >
-              {projects.map((element: Project) => {
-                return (
-                  <SwiperSlide
-                    key={element.projectId}
-                    className={classes.swiperSlide}
-                  >
-                    <div className={classes.img}>
-                      <CartVideo
-                        title={element.title}
-                        videoURL={element.videoURL}
-                        projectId={element.projectId}
-                      />
-                    </div>
-                  </SwiperSlide>
-                );
-              })}
-            </Swiper>
-          </div>
-          <div className={classes.info}>
-            <p>To see more projects, I invite you to visit my github:</p>
-            <div className={classes.link}>
-              <Link href={"https://github.com/thomas9291"} target="_blank">
-                <Github />
-              </Link>
-            </div>
-          </div>
+          <Swiper
+            className={classes.swiper}
+            effect={"coverflow"}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={"auto"}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }}
+            pagination={true}
+            modules={[EffectCoverflow, Pagination]}
+          >
+            {projects.map((element: Project) => {
+              return (
+                <SwiperSlide
+                  key={element.projectId}
+                  className={classes.swiperSlide}
+                >
+                  <div className={classes.img}>
+                    <CartVideo
+                      title={element.title}
+                      videoURL={element.videoURL}
+                      projectId={element.projectId}
+                    />
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
       </div>
     );
