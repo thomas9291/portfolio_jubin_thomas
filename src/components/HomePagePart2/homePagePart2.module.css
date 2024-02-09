@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  margin-top: 50px;
+}
+
+.titleContainer h1 {
+  color: var(--primary-normal);
+  text-shadow: 0 0 10px var(--primary-normal);
+}
+.titleContainer {
+  position: relative;
+
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.lightBar {
+  position: absolute;
+  height: 50px;
+  width: 6px;
+  background-color: var(--primary-normal);
+  border-radius: 2rem;
+  left: 0;
+  box-shadow: 0 0 10px var(--primary-normal), 0 0 20px var(--primary-normal),
+    0 0 40px var(--primary-normal), 0 0 80px var(--primary-normal),
+    0 0 120px var(--primary-normal);
+  z-index: 2;
+  animation: lightBarEffect 5s linear infinite;
+}
+
+@keyframes lightBarEffect {
+  0% {
+    transform: scaleY(0) translateX(0);
+  }
+  10% {
+    transform: scaleY(1) translateX(0);
+  }
+  90% {
+    transform: scaleY(1) translateX(calc(200px - 10px));
+  }
+  100% {
+    transform: scaleY(0) translateX(calc(200px - 10px));
+  }
+}
+.topLayer {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: var(--primary-dark);
+  left: 0;
+  animation: topLayerAnimation 10s linear infinite;
+}
+
+@keyframes topLayerAnimation {
+  0%,
+  5% {
+    transform: translateX(0px);
+  }
+  45%,
+  50% {
+    transform: translateX(95%);
+  }
+  50.001%,
+  55% {
+    transform: translateX(-100%);
+  }
+  95% {
+    transform: translateX(-10px);
+  }
+}
+
+/* ---------------------------------------------------------------------
+card container
+---------------------------------------------------------------------- */
+
+.shoesCardContainer {
+  margin: 50px 1rem 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
