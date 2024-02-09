@@ -14,8 +14,8 @@
   font-family: fantasy;
   font-size: large;
   font-weight: bold;
-  color: red;
-  margin: 1rem;
+  color: var(--primary-light);
+  margin-bottom: 1rem;
   animation: ease-in 2s visiblility;
   text-align: center;
 }
@@ -23,7 +23,6 @@
   text-align: center;
   padding: 0 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-shadow: 0 0 20px blue, 0 0 40px blue, 0 0 80px blue;
 }
 .text :nth-child(1) {
   animation: ease-in 3s visiblility;

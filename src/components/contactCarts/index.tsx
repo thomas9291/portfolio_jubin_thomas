@@ -12,7 +12,7 @@ export const ContactCarts = () => {
         <div>
           <Whatsapp />
         </div>
-        <h2>Thomas Jubin</h2>
+        <h4>Thomas Jubin</h4>
         <p>+49 172 8005738</p>
       </div>
       <div className={classes.carts}>
@@ -20,7 +20,9 @@ export const ContactCarts = () => {
         <div>
           <Gmail />
         </div>
-        <h2>thomas.jubin92@gmail.com</h2>
+        <Link href={"mailto:thomas.jubin92@gmail.com"}>
+          thomas.jubin92@gmail.com
+        </Link>
       </div>
       <div className={classes.carts}>
         <h1 className={classes.headers}>Github</h1>
@@ -48,7 +50,7 @@ export const ContactCarts = () => {
         <div>
           <CallEnter />
         </div>
-        <h2>Thomas Jubin</h2>
+        <h4>Thomas Jubin</h4>
         <p>+49 172 8005738</p>
       </div>
     </div>

@@ -7,7 +7,7 @@
   height: 100%;
 }
 .container {
-  margin: 2rem 1rem;
+  margin: 50px 1rem 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +34,6 @@
   color: whitesmoke;
   font-size: larger;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-shadow: 0 0 20px blue, 0 0 40px blue, 0 0 80px blue;
 }
 
 .header2 {
@@ -42,7 +41,7 @@
   font-size: large;
   font-family: fantasy;
   animation: ease-in 2s slideinReverse;
-  color: red;
+  color: var(--primary-light);
 }
 .descriptionText {
   animation: ease-in 3s visiblility;
@@ -106,16 +105,17 @@
 @keyframes animateText {
   0%,
   20% {
-    color: #fff2;
+    color: var(--primary-dark);
   }
 
   21%,
   79% {
-    color: #0f0;
+    color: var(--primary-normal);
+    text-shadow: 0 0 10px var(--primary-normal);
   }
 
   80%,
   100% {
-    color: #fff2;
+    color: var(--primary-light);
   }
 }

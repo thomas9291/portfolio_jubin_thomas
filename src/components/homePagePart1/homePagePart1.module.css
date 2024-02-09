@@ -1,40 +1,86 @@
 .homepagePart1 {
-  height: 100vh;
+  width: 90%;
+  height: 778px;
+  background-image: url("/images/futuristisches/futuristisches.jpg");
+  background-size: cover;
+  margin: 128px 0 0 0;
+  background-position: center;
   position: relative;
-}
-
-.moon {
-  position: absolute;
-  top: 15%;
-  right: 50%;
-  transform: translate(-50%, -50%);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4rem;
 }
 .logoContainer {
   position: absolute;
-  top: 30%;
+  top: 50px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.starsContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70vh;
-}
-.duneContainer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40%;
+.logo {
   margin: 0;
   padding: 0;
+  display: flex;
 }
+.logo li {
+  list-style: none;
+  color: var(--primary-normal);
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  transition: 2.6s;
+  text-shadow: 0 0 10px var(--primary-normal), 0 0 20px var(--primary-normal);
+}
+
+.logoContainer p {
+  color: var(--primary-light);
+  font-size: 15px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
+
 @media screen and (min-width: 810px) {
-  .moon {
-    top: 20%;
-    right: 20%;
-    transform: translate(-50%, -50%);
+  .homepagePart1 {
+    width: 95%;
+    height: 900px;
   }
+  .logo li {
+    font-size: 60px;
+  }
+  .logoContainer {
+    top: 0px;
+  }
+  .logoContainer p {
+    font-size: 30px;
+  }
+}
+.logo:hover li {
+  cursor: pointer;
+  transform: translate(-100px, -200px) rotate(-45deg);
+  opacity: 0;
+  filter: blur(20px);
+}
+.logo:hover li:nth-child(1) {
+  transition-delay: 0;
+}
+.logo:hover li:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.logo:hover li:nth-child(3) {
+  transition-delay: 0.8s;
+}
+.logo:hover li:nth-child(4) {
+  transition-delay: 1.2s;
+}
+.logo:hover li:nth-child(5) {
+  transition-delay: 1.6s;
+}
+.logo:hover li:nth-child(6) {
+  transition-delay: 1.8s;
+}
+.logo:hover li:nth-child(7) {
+  transition-delay: 2.2s;
 }

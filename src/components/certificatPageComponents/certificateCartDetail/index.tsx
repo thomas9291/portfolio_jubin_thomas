@@ -23,7 +23,7 @@ export const CertificateCartDetail: React.FC<certificatDetail> = (props) => {
         .map((letter, i) => {
           return `<span style= "animation-duration: ${
             Math.random() * 5
-          }s; filter: hue-rotate(${i * 50}deg)">${letter}</span>`;
+          }s">${letter}</span>`;
         })
         .join("");
       textContainer!.innerHTML = htmlSpans;

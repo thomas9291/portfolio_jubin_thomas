@@ -22,8 +22,8 @@
 .line1 {
   width: 205px;
   height: 205px;
-  border-color: var(--color-link) var(--color-link) var(--color-link)
-    transparent;
+  border-color: var(--primary-normal) var(--primary-normal)
+    var(--primary-normal) transparent;
   box-sizing: border-box;
   border-radius: 50%;
   border-style: solid;
@@ -36,10 +36,9 @@
 .line2 {
   width: 220px;
   height: 220px;
-  border-color: var(--color-link) transparent var(--color-link)
-    var(--color-link);
-  box-shadow: 0 0 20px var(--color-link), 0 0 40px var(--color-link),
-    0 0 60px var(--color-link);
+  border-color: var(--primary-normal) transparent var(--primary-normal)
+    var(--primary-normal);
+  box-shadow: 0 0 20px var(--primary-normal);
   box-sizing: border-box;
   border-radius: 50%;
   border-style: solid;
@@ -52,9 +51,9 @@
 .headers {
   font-size: large;
   font-weight: 700;
-  color: var(--color-link);
-  text-shadow: 0 0 20px var(--color-link), 0 0 40px var(--color-link),
-    0 0 80px var(--color-link);
+  color: var(--primary-normal);
+  text-shadow: 0 0 20px var(--primary-normal);
+  margin-top: 0.5rem;
 }
 .headers2 {
   font-size: large;
