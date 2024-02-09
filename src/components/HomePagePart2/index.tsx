@@ -1,6 +1,8 @@
 import React from "react";
 import classes from "./homePagePart2.module.css";
 import CardShoeNikeYellow from "../designCardComponents/cardShoeNikeYellow";
+import CardShoeMultiColor from "../designCardComponents/cardShoesMultiColor";
+import HeadphoneCard from "../designCardComponents/headphone";
 
 const HomePagePart2 = () => {
   return (
@@ -12,6 +14,8 @@ const HomePagePart2 = () => {
       </div>
       <div className={classes.shoesCardContainer}>
         <CardShoeNikeYellow />
+        <HeadphoneCard />
+        <CardShoeMultiColor />
       </div>
     </div>
   );
