@@ -1,0 +1,137 @@
+.container {
+  width: 250px;
+  height: 400px;
+  background-color: rgb(59, 63, 44);
+  border-radius: 1rem;
+  position: relative;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 250px;
+  height: 170px;
+  transition: 1s;
+}
+.img {
+  object-fit: contain;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(-25deg);
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #9bdc22;
+  clip-path: circle(50% at 97% 4%);
+  width: 300px;
+  height: 300px;
+  transition: 1s;
+}
+
+.container::after {
+  content: "Nike";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8em;
+  font-weight: 600;
+  opacity: 30%;
+}
+.container:hover {
+  cursor: pointer;
+}
+.container:hover .imageContainer {
+  top: 0;
+  transform: scale(2);
+  transition: 1s;
+}
+.container:hover::before {
+  clip-path: circle(61% at 77% 0);
+  transition: 1s;
+}
+.container h2 {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #9bdc22;
+  transition: 1s;
+}
+.container:hover h2 {
+  bottom: 30%;
+  transition: 1s;
+}
+.contentBox {
+  width: 80%;
+  height: 100px;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  opacity: 0;
+}
+.contentBox .size,
+.contentBox .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+}
+.contentBox .size span,
+.contentBox .color span {
+  margin: 0 0.3rem;
+}
+.contentBox .size span {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  padding: 0 0.1rem;
+}
+.contentBox .size span:hover {
+  background-color: #9bdc22;
+}
+.contentBox .color span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.color span:nth-child(2) {
+  background-color: #9bdc22;
+  margin-left: 0.7rem;
+}
+.color span:nth-child(3) {
+  background-color: var(--primary-normal);
+}
+.color span:nth-child(4) {
+  background-color: #893298;
+}
+.size span:nth-child(2) {
+  margin-left: 0.7rem;
+}
+.btn {
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.contentBox h3 {
+  color: white;
+}
+.container:hover .contentBox {
+  opacity: 1;
+  transition: 5s;
+}

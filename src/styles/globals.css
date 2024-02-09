@@ -9,7 +9,5 @@ body {
   --primary-normal: #4db4bb;
   --primary-dark: #201a2d;
   --primary-light: #b2c3d3;
-  --color-link: rgb(114, 232, 70);
-  --color-link-hover: rgb(85, 80, 220);
   background-color: var(--primary-dark);
 }
