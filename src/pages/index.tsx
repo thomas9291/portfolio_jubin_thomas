@@ -7,7 +7,9 @@ export default function homePage() {
     <>
       <MenuNavBar />
       <HomePagePart1 />
-      <HomePagePart2 />
+      <div id="creativity">
+        <HomePagePart2 />
+      </div>
     </>
   );
 }

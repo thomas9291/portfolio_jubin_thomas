@@ -82,6 +82,19 @@ card container
 .shoesCardContainer {
   margin: 50px 1rem 0 1rem;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 100%;
+
+  /* min-width: 983px; */
+}
+
+@media screen and (max-width: 810px) {
+  .shoesCardContainer {
+    overflow: hidden;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    margin: 50px 6rem 0 6rem;
+  }
 }
