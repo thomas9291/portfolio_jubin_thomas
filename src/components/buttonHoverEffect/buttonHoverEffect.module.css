@@ -18,7 +18,7 @@
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   border-top: 1px solid rgba(250, 52, 52, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: var(--primary--light);
   border-radius: 30px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -65,7 +65,7 @@
 
 .btnContainer:hover::before {
   bottom: 0px;
-  height: 50%;
+  height: 25%;
   width: 90%;
   border-radius: 30px;
   transition-delay: 0.5s;
@@ -86,14 +86,13 @@
 }
 .btnContainer:hover::after {
   top: 0px;
-  height: 50%;
+  height: 25%;
   width: 90%;
   border-radius: 30px;
   transition-delay: 0.5s;
 }
 .btnContainer:before,
 .btnContainer:after {
-  background: #52d3d8;
-  box-shadow: 0 0 5px #52d3d8, 0 0 15px #52d3d8, 0 0 30px #52d3d8,
-    0 0 60px #52d3d8;
+  background: #4db4bb;
+  box-shadow: 0 0 5px #4db4bb, 0 0 15px #4db4bb, 0 0 30px #4db4bb;
 }

@@ -1,6 +1,6 @@
 .carts {
-  border: 1px solid white;
-  box-shadow: 0 0 20px blue, 0 0 40px blue, 0 0 80px blue;
+  border: 1px solid var(--primary-light);
+  box-shadow: 0 0 20px var(--primary-normal);
   margin: 1rem;
   padding: 1rem;
   border-radius: 1rem;
@@ -16,9 +16,10 @@
 .headers {
   font-size: x-large;
   font-family: "Times New Roman", Times, serif;
+  color: var(--primary-normal);
 }
 .carts a {
-  color: white;
+  color: var(--primary-normal);
   text-decoration: none;
 }
 @media screen and (min-width: 810px) {

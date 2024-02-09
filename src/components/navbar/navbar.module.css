@@ -1,9 +1,10 @@
 .active {
-  background-color: black;
-  z-index: 20;
+  background-color: var(--primary-dark);
+  z-index: 3;
   height: 100vh;
   position: fixed;
   top: 0;
+  filter: blur(40);
   font-family: Arial, Helvetica, sans-serif;
   width: 50%;
   overflow: hidden;
@@ -11,15 +12,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 80%;
 }
+
 .active .btn,
 .navbar .btn {
   position: fixed;
   width: 40px;
   height: 40px;
-  top: 10px;
+  bottom: 44px;
   left: 10px;
+  border-radius: 10px;
+  background-color: var(--primary-dark);
+  color: var(--primary-normal);
+  z-index: 3;
+  cursor: pointer;
+  box-shadow: 0 0 5px var(--primary-light);
 }
+
 .active ul {
   display: flex;
   flex-direction: column;
@@ -42,7 +52,7 @@
   text-decoration: none;
   text-align: center;
   font-size: 1.4em;
-  color: #fff;
+  color: var(--primary-light);
   font-weight: 200;
   transition: 0.5s;
   transition-delay: 0.5s;
@@ -61,8 +71,9 @@
   z-index: 1;
   text-align: center;
   font-size: 0.55em;
-  color: #3bffe8;
-  text-shadow: 0 0 10px #3bffe8, 0 0 30px #3bffe8, 0 0 80px #3bffe8;
+  color: var(--primary-normal);
+  text-shadow: 0 0 10px var(--primary-normal), 0 0 30px var(--primary-normal),
+    0 0 80px var(--primary-normal);
   font-weight: 500;
   letter-spacing: 40px;
   transition: 0.5s;
@@ -80,5 +91,11 @@
   .active ul li a {
     font-size: 1.8em;
     font-weight: 400;
+  }
+  .active .btn,
+  .navbar .btn {
+    left: 90px;
+    width: 35px;
+    height: 35px;
   }
 }

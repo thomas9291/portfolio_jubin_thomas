@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import classes from "./Presentation.module.css";
-import Link from "next/link";
-
 import Loading from "../../loading";
 
 const PresentationText: React.FC = () => {
