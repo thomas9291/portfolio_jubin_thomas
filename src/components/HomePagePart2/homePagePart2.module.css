@@ -10,7 +10,6 @@
 }
 .titleContainer {
   position: relative;
-
   width: 200px;
   height: 40px;
   display: flex;
@@ -95,6 +94,5 @@ card container
     overflow: hidden;
     overflow-x: scroll;
     justify-content: flex-start;
-    margin: 50px 6rem 0 6rem;
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./homePagePart1.module.css";
+import PresentationText from "../aboutMePageComponents/Presentation";
 
 const HomePagePart1 = () => {
   return (
@@ -17,6 +18,9 @@ const HomePagePart1 = () => {
           </ul>
           <p>to my</p>
           <p>Portfolio</p>
+        </div>
+        <div className={classes.presentationText}>
+          <PresentationText />
         </div>
       </div>
     </>
