@@ -6,7 +6,7 @@ const MenuNavBar = () => {
     <div className={classes.menuBar}>
       <Link href="#creativity">Creativity</Link>
       <Link href="#blog">Blog</Link>
-      <Link href="#">Dream</Link>
+      <Link href="#dream">Dream</Link>
     </div>
   );
 };
