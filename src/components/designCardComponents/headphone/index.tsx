@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./headphone.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeadphoneCard = () => {
   return (
@@ -18,9 +19,9 @@ const HeadphoneCard = () => {
         <h2 className={classes.price}>
           $40.<small>99</small>
         </h2>
-        <a href="#" className={classes.buy}>
+        <Link href="/contact" className={classes.buy}>
           Buy Now
-        </a>
+        </Link>
       </div>
     </div>
   );
