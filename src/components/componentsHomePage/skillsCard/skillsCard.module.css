@@ -1,0 +1,18 @@
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: var(--primary-normal);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--primary-light);
+}
+.title {
+  text-transform: uppercase;
+  margin: 0.5rem;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary-dark);
+}
