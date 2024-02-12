@@ -43,7 +43,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 8em;
+  font-size: 7em;
   font-weight: 600;
   opacity: 30%;
 }
@@ -130,6 +130,9 @@
   padding: 0.5rem 2rem;
   cursor: pointer;
   box-shadow: 0 0 10px black;
+  text-decoration: none;
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
 }
 .contentBox h3 {
   color: white;

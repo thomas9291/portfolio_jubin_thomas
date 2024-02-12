@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./cardShoeNikeYellow.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const CardShoeNikeYellow = () => {
   return (
@@ -29,7 +30,9 @@ const CardShoeNikeYellow = () => {
           <span></span>
           <span></span>
         </div>
-        <button className={classes.btn}>buy now</button>
+        <Link href={"/contact"} className={classes.btn}>
+          buy now
+        </Link>
       </div>
     </div>
   );
