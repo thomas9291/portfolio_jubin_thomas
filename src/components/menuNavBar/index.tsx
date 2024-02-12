@@ -7,6 +7,7 @@ const MenuNavBar = () => {
       <Link href="#creativity">Creativity</Link>
       <Link href="#blog">Blog</Link>
       <Link href="#dream">Dream</Link>
+      <Link href="#skills">Skills</Link>
     </div>
   );
 };
