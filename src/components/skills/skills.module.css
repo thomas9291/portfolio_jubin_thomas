@@ -118,7 +118,15 @@ skills container
 --------------------------------------------------------------- */
 .skillsContainer {
   width: 100%;
-  margin-top: 50px;
+  margin: 50px 1rem 0 1rem;
   display: flex;
   justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 810px) {
+  .skillsContainer {
+    overflow-x: scroll;
+  }
 }

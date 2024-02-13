@@ -3,7 +3,9 @@ import classes from "./homePagePart3.module.css";
 import Image from "next/image";
 
 const HomePagePart3 = () => {
-  const [isVideo, setIsVideo] = useState("/videos/video1.mp4");
+  const [isVideo, setIsVideo] = useState(
+    "https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/fitness-app.mp4"
+  );
   const videoRef = useRef<HTMLVideoElement>(null);
   useEffect(() => {
     const video = videoRef.current;
@@ -23,36 +25,60 @@ const HomePagePart3 = () => {
           <source type="video/mp4" />
         </video>
         <ul className={classes.navigation}>
-          <li onClick={() => setIsVideo("/videos/video1.mp4")}>
+          <li
+            onClick={() =>
+              setIsVideo(
+                "https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/fitness-app.mp4"
+              )
+            }
+          >
             <Image
-              src={"/images/blogImg/img1.jpg"}
+              src={"/images/blogImg/fitness-app.jpg"}
               alt="images"
               width={300}
               height={300}
               priority
             />
           </li>
-          <li onClick={() => setIsVideo("/videos/video2.mp4")}>
+          <li
+            onClick={() =>
+              setIsVideo(
+                "https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/kitsune-art-galery.mp4"
+              )
+            }
+          >
             <Image
-              src={"/images/blogImg/img2.jpg"}
+              src={"/images/blogImg/kitsune-art-gallery.jpg"}
               alt="images"
               width={300}
               height={300}
               priority
             />
           </li>
-          <li onClick={() => setIsVideo("/videos/video3.mp4")}>
+          <li
+            onClick={() =>
+              setIsVideo(
+                "https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/frontend-app.mp4"
+              )
+            }
+          >
             <Image
-              src={"/images/blogImg/img3.jpg"}
+              src={"/images/blogImg/frontend-app.jpg"}
               alt="images"
               width={300}
               height={300}
               priority
             />
           </li>
-          <li onClick={() => setIsVideo("/videos/video4.mp4")}>
+          <li
+            onClick={() =>
+              setIsVideo(
+                "https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/fishing-place-app.mp4"
+              )
+            }
+          >
             <Image
-              src={"/images/blogImg/img4.jpg"}
+              src={"/images/blogImg/fishing-app.jpg"}
               alt="images"
               width={300}
               height={300}
