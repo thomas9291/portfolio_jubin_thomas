@@ -1,5 +1,5 @@
 .container {
-  width: 100px;
+  min-width: 100px;
   height: 100px;
   background-color: var(--primary-normal);
   display: flex;
@@ -8,11 +8,12 @@
   align-items: center;
   border-radius: 20px;
   box-shadow: 0 0 10px var(--primary-light);
+  margin: 1rem;
 }
 .title {
   text-transform: uppercase;
   margin: 0.5rem;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: var(--primary-dark);
 }
