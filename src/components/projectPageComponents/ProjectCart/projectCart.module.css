@@ -78,6 +78,7 @@
   align-items: center;
   border: 6px solid black;
   border-radius: 20px;
+  width: 300px;
 }
 
 .screen {

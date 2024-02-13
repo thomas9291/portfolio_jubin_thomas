@@ -27,9 +27,17 @@
   color: var(--primary-normal);
   z-index: 3;
   cursor: pointer;
-  box-shadow: 0 0 5px var(--primary-light);
+  animation: shining 1s linear infinite;
 }
-
+@keyframes shining {
+  0% {
+    box-shadow: 0 0 5px var(--primary-normal);
+  }
+  100% {
+    box-shadow: 0 0 5px var(--primary-normal), 0 0 20px var(--primary-normal),
+      0 0 40px var(--primary-normal);
+  }
+}
 .active ul {
   display: flex;
   flex-direction: column;
