@@ -2,6 +2,27 @@ import { Project } from "../../project.model";
 
 export const projectArray: Project[] = [
   {
+    projectId: "p6",
+    title: "React Three Demo",
+    programs: [
+      "html",
+      "css",
+      "javascript",
+      "nextjs",
+      "reactjs",
+      "vercel",
+      "github",
+      "visualStudio",
+    ],
+    date: "apr 2024",
+    description:
+      "Immersive exploration with React Three is a captivating demonstration of integrating React Three Fiber, React Three Drei, React Spring, and React Postprocessing to create interactive 3D environments. This experience offers smooth navigation and reactive animations through React Spring, along with advanced visual effects using React Postprocessing.Additionally, custom 3D elements created with Blender are seamlessly incorporated, enhancing the overall immersive experience. ",
+    videoURL:
+      "https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/react-three-demo.mp4",
+    linkURL: "https://react-three-six.vercel.app/",
+    codeURL: "https://github.com/thomas9291",
+  },
+  {
     projectId: "p5",
     title: "Kitsune Art Gallery",
     programs: [
