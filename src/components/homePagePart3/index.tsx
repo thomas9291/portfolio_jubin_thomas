@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HomePagePart3 = () => {
   const [isVideo, setIsVideo] = useState(
-    "https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/fitness-app.mp4"
+    "https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/react-three-demo.mp4"
   );
   const videoRef = useRef<HTMLVideoElement>(null);
   useEffect(() => {
@@ -25,6 +25,21 @@ const HomePagePart3 = () => {
           <source type="video/mp4" />
         </video>
         <ul className={classes.navigation}>
+          <li
+            onClick={() =>
+              setIsVideo(
+                "https://portfolio-thomas-jubin.s3.eu-central-1.amazonaws.com/react-three-demo.mp4"
+              )
+            }
+          >
+            <Image
+              src={"/images/blogImg/react-three.jpg"}
+              alt="images"
+              width={300}
+              height={300}
+              priority
+            />
+          </li>
           <li
             onClick={() =>
               setIsVideo(
