@@ -107,7 +107,7 @@ card container
 .showAnimate .cards:nth-child(3) {
   transition-delay: 0.4s;
 }
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 940px) {
   .shoesCardContainer,
   .showAnimate {
     overflow: hidden;
