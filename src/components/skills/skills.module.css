@@ -107,7 +107,7 @@ skills header
   }
 }
 
-@media screen and (min-width: 810px) {
+@media screen and (min-width: 900px) {
   .containerHeader a {
     padding: 20px 30px;
   }
@@ -125,7 +125,7 @@ skills container
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 900px) {
   .skillsContainer {
     overflow-x: scroll;
   }
