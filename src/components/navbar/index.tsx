@@ -7,13 +7,16 @@ function NavBar() {
   const toggleHandler = () => {
     setIsActive(!isActive);
   };
+  const homePageHandler = () => {
+    window.open("https://portfolio-2025-jubin-thomas.vercel.app/");
+  };
   return (
     <nav className={isActive ? classes.active : classes.navbar}>
       <ul>
         <li>
-          <Link href={"/"} data-text="Home">
+          <a onClick={homePageHandler} data-text="Home">
             Home
-          </Link>
+          </a>
         </li>
         <li>
           <Link href={"/aboutMe"} data-text="About Me">
