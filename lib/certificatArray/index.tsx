@@ -2,6 +2,27 @@ import { certificatDetail } from "../../project.model";
 
 export const certificatsArray: certificatDetail[] = [
   {
+    imagePath:
+      "/images/certificats/zertifikat_blender_produktvisualisierung1.png",
+    certificatId: "certificat12",
+    date: "sep.16.2024",
+    title: "IBB institut",
+    linkURL:
+      "https://www.ibb.com/weiterbildung/produktvisualisierung-in-der-3d-software-blender",
+    description:
+      "Produktmodell nach Blue-Prints erstellen (Modellieren nach Vorlage); Visualisieren und Einbinden in Hintergrundbilder, Modelle aus CAD-Daten übernehmen, aufbereiten und visualisieren, Produktanimationen erstellen, Einführung in das Physics-System und Simulatione…",
+  },
+  {
+    imagePath: "/images/certificats/zertifikat_blender_basic.png",
+    certificatId: "certificat11",
+    date: "Jul.19.2024",
+    title: "IBB institut",
+    linkURL:
+      "https://www.ibb.com/weiterbildung/3d-cgi-basics-der-3d-software-blender",
+    description:
+      "Benutzeroberfläche, Primitive Körper und Manipulatoren, Externe Referenzen einbinden, Boolean Workflow, Polymodelling, Kamera-Matching, Basis Shader, Basis Licht, Basis Rendereinstellungen, Einführung Keyframeanimation ",
+  },
+  {
     imagePath: "/images/certificats/spiced_certificats.jpg",
     certificatId: "certificat1",
     date: "Jul.06.2023",
