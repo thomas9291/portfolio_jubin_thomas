@@ -1,6 +1,12 @@
 import React from "react";
 import classes from "./contactCarts.module.css";
-import { Whatsapp, Gmail, LinkedIn, CallEnter } from "../icons/contactSvg";
+import {
+  Whatsapp,
+  Gmail,
+  LinkedIn,
+  CallEnter,
+  Artstation,
+} from "../icons/contactSvg";
 import { Github } from "../icons/svgItems/SvgItems";
 import Link from "next/link";
 
@@ -52,6 +58,17 @@ export const ContactCarts = () => {
         </div>
         <h4>Thomas Jubin</h4>
         <p>+49 172 8005738</p>
+      </div>
+      <div className={classes.carts}>
+        <h1 className={classes.headers}>Artstation portfolio</h1>
+        <div>
+          <Artstation />
+        </div>
+        <h4>3D Portfolio</h4>
+
+        <Link href={"https://www.artstation.com/thomasjubin"} target="_blank">
+          https://www.artstation.com/thomasjubin
+        </Link>
       </div>
     </div>
   );
