@@ -33,7 +33,7 @@ const CharacterConfigurator = () => {
       <div className={classes.btn}>
         <BtnStars title={"hip hop"} onClick={handleAnimationChangeHipHop} />
         <BtnStars title={"fight"} onClick={handleAnimationChangeFight} />
-        <BtnStars title={"soul"} onClick={handleAnimationChangeSoulSpin} />
+        <BtnStars title={"funk"} onClick={handleAnimationChangeSoulSpin} />
 
         {/* <button onClick={handleAnimationChange}>hello</button> */}
       </div>

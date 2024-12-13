@@ -5,7 +5,7 @@
 }
 .btn {
   position: absolute;
-  top: 20px;
+  top: 150px;
   right: 20px;
   height: 200px;
   width: 500px;
@@ -16,7 +16,7 @@
   align-items: center;
   gap: 60px;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 1180px) {
   .btn {
     right: -60px;
     top: 5px;

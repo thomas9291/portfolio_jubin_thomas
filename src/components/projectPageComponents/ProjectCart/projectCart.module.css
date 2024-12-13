@@ -8,6 +8,8 @@
   font-size: x-large;
   text-align: center;
   margin: 2rem 1rem 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .header1 {
   position: relative;
@@ -42,7 +44,8 @@
 .description {
   color: white;
   font-size: larger;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .link {
@@ -66,6 +69,8 @@
 .linkURL {
   text-align: center;
   color: var(--primary-light);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .linkURL a {
