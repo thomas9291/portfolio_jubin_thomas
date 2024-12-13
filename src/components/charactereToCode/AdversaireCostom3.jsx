@@ -35,7 +35,6 @@ export function Model({ ...props }) {
       }
     }
   }, [actions, animation]);
-  console.log("actions: ", actions);
 
   return (
     <>

@@ -1,0 +1,69 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.mainContainer {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.mainContainer h2 {
+  color: var(--primary-normal);
+  margin: 5px;
+}
+.mainContainer p {
+  color: var(--primary-normal);
+}
+
+.btnContainer,
+.btnSheetContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.btnContainer span,
+.btnSheetContainer span {
+  border: 1px solid var(--primary-normal);
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+}
+.btnContainer span:hover,
+.btnSheetContainer span:hover {
+  cursor: pointer;
+}
+
+.btnContainer span:nth-child(2) {
+  background-color: #808080;
+}
+.btnContainer span:nth-child(3) {
+  background-color: #22177a;
+}
+.btnContainer span:nth-child(4) {
+  background-color: #d8d88a;
+}
+.btnContainer span:nth-child(5) {
+  background-color: black;
+}
+.btnSheetContainer span:nth-child(2) {
+  background-color: black;
+}
+.btnSheetContainer span:nth-child(3) {
+  background-color: #263968;
+}
+.btnSheetContainer span:nth-child(4) {
+  background-color: #f593ea;
+}
+.btnSheetContainer span:nth-child(5) {
+  background-color: #808080;
+}
