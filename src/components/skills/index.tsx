@@ -16,6 +16,7 @@ import {
   Aws,
   Vercel,
   Mongodb,
+  Blender,
   VisualStudio,
 } from "../icons/svgItems/SvgItems";
 const Skills = () => {
@@ -42,6 +43,9 @@ const Skills = () => {
         </SkillsCard>
         <SkillsCard title={"react"}>
           <ReactSvg />
+        </SkillsCard>
+        <SkillsCard title={"blender"}>
+          <Blender />
         </SkillsCard>
         <SkillsCard title={"typescript"}>
           <Typescript />
