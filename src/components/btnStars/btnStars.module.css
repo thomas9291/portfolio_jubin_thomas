@@ -1,0 +1,127 @@
+.link {
+  position: relative;
+  padding: 5px 12px;
+  border: 2px solid var(--primary-normal);
+  color: var(--primary-normal);
+  border-radius: 20px;
+  font-size: 15px;
+  letter-spacing: 3px;
+  transition: 0.5s;
+}
+.link:hover {
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.link span {
+  position: absolute;
+  background: var(--primary-normal);
+  box-shadow: 0 0 10px var(--primary-normal), 0 0 20px var(--primary-normal),
+    0 0 30px var(--primary-normal), 0 0 50px var(--primary-normal),
+    0 0 100px var(--primary-normal);
+}
+.link span:nth-child(1),
+.link span:nth-child(3) {
+  width: 25px;
+  height: 3px;
+}
+.link span:nth-child(2),
+.link span:nth-child(4) {
+  width: 3px;
+  height: 25px;
+}
+.link span:nth-child(1) {
+  top: calc(50% - 2px);
+  left: -30px;
+  transition: 0.5s ease-in-out;
+  transform-origin: left;
+  transition-delay: 0.25s;
+}
+.link:hover span:nth-child(1) {
+  left: 50%;
+  transform: scaleX(0);
+  transition-delay: 0s;
+}
+.link span:nth-child(3) {
+  top: calc(50% - 2px);
+  right: -30px;
+  transition: 0.5s ease-in-out;
+  transform-origin: right;
+  transition-delay: 0.25s;
+}
+.link:hover span:nth-child(3) {
+  right: 50%;
+  transform: scaleY(0);
+  transition-delay: 0s;
+}
+.link span:nth-child(2) {
+  left: calc(50% - 2px);
+  top: -30px;
+  transition: 0.5s ease-in-out;
+  transform-origin: top;
+  transition-delay: 0.25s;
+}
+.link:hover span:nth-child(2) {
+  top: 50%;
+  transform: scaleX(0);
+  transition-delay: 0s;
+}
+.link span:nth-child(4) {
+  left: calc(50% - 2px);
+  bottom: -30px;
+  transition: 0.5s ease-in-out;
+  transform-origin: bottom;
+  transition-delay: 0.25s;
+}
+.link:hover span:nth-child(4) {
+  bottom: 50%;
+  transform: scaleY(0);
+  transition-delay: 0s;
+}
+.link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-normal);
+  border-radius: 20px;
+  transform: scale(0);
+  transition: 0.5s;
+}
+.link:hover::before {
+  transform: scale(1);
+  transition-delay: 0.5s;
+  box-shadow: 0 0 10px var(--primary-normal), 0 0 30px var(--primary-normal),
+    0 0 60px var(--primary-normal);
+}
+@media screen and (max-width: 720px) {
+  .link {
+    padding: 2px 6px;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  .link span:nth-child(1),
+  .link span:nth-child(3) {
+    width: 20px;
+    height: 2px;
+  }
+  .link span:nth-child(2),
+  .link span:nth-child(4) {
+    width: 2px;
+    height: 20px;
+  }
+  .link span:nth-child(1) {
+    left: -24px;
+  }
+  .link span:nth-child(3) {
+    right: -24px;
+  }
+  .link span:nth-child(2) {
+    top: -24px;
+  }
+  .link span:nth-child(4) {
+    bottom: -24px;
+  }
+}

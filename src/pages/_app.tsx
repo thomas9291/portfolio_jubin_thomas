@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Layout from "../../layout/Layout";
 import Head from "next/head";
+import { CustomizationProvider } from "@/contexts/Customization";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -15,7 +16,9 @@ export default function App({ Component, pageProps }: AppProps) {
             content="Portafolio thomas! my projects,contact and learn more about me..."
           />
         </Head>
-        <Component {...pageProps} />
+        <CustomizationProvider>
+          <Component {...pageProps} />
+        </CustomizationProvider>
       </Layout>
     </>
   );

@@ -4,6 +4,7 @@ import MenuNavBar from "@/components/menuNavBar";
 import HomePagePart3 from "@/components/homePagePart3";
 import HomePagePart4 from "@/components/homePagePart4";
 import Skills from "@/components/skills";
+import CharacterConfigurator from "../components/characterConfigurator";
 
 export default function homePage() {
   return (
@@ -12,6 +13,7 @@ export default function homePage() {
       <HomePagePart1 />
       <div id="creativity">
         <HomePagePart2 />
+        <CharacterConfigurator />
       </div>
       <div id="blog">
         <HomePagePart3 />
