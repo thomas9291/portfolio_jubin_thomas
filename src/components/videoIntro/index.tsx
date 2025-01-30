@@ -6,9 +6,11 @@ import { PlayCircleIcon } from "@heroicons/react/20/solid";
 const VideoIntro: React.FC = () => {
   return (
     <div className={classes.presentationContainer}>
-      <video className={classes.screen} controls>
-        <source src={"/videos/nexusTraining6.mp4"} type="video/mp4" />
-      </video>
+      <div className={classes.videoContainer}>
+        <video className={classes.screen} controls width="500" height="500">
+          <source src={"/videos/nexusTraining6.mp4"} type="video/mp4" />
+        </video>
+      </div>
       <div className={classes.containerText}>
         <h1 className={classes.headers2}>Hi, MY NAME IS THOMAS JUBIN</h1>
         <h1 className={classes.headers}>I AM 3D ARTIST </h1>
