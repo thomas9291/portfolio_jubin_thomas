@@ -8,7 +8,7 @@ const VideoIntro: React.FC = () => {
     <div className={classes.presentationContainer}>
       <div className={classes.videoContainer}>
         <video className={classes.screen} controls width="500" height="500">
-          <source src={"/videos/nexusTraining6.mp4"} type="video/mp4" />
+          <source src={"/videos/nexusTraining7.mp4"} type="video/mp4" />
         </video>
       </div>
       <div className={classes.containerText}>
